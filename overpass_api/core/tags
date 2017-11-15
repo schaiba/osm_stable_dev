@@ -1,0 +1,857 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AREAS	settings.h	/^  File_Properties* AREAS;$/;"	m	struct:Area_Settings
+AREA_BLOCKS	settings.h	/^  File_Properties* AREA_BLOCKS;$/;"	m	struct:Area_Settings
+AREA_TAGS_GLOBAL	settings.h	/^  File_Properties* AREA_TAGS_GLOBAL;$/;"	m	struct:Area_Settings
+AREA_TAGS_LOCAL	settings.h	/^  File_Properties* AREA_TAGS_LOCAL;$/;"	m	struct:Area_Settings
+ASSISTING	datatypes.h	/^  static const uint ASSISTING = 4;$/;"	m	struct:Error_Output
+Aligned_Segment	type_area.h	/^struct Aligned_Segment$/;"	s
+Area	type_area.h	/^struct Area$/;"	s
+Area_Block	type_area.h	/^  Area_Block() : id(0u) {}$/;"	f	struct:Area_Block
+Area_Block	type_area.h	/^  Area_Block(Id_Type id_, const std::vector< uint64 >& coors_)$/;"	f	struct:Area_Block
+Area_Block	type_area.h	/^  Area_Block(void* data) : id(*(Id_Type*)data)$/;"	f	struct:Area_Block
+Area_Block	type_area.h	/^struct Area_Block$/;"	s
+Area_Location	type_area.h	/^  Area_Location() {}$/;"	f	struct:Area_Location
+Area_Location	type_area.h	/^  Area_Location(uint32 id_, const std::vector< uint32 >& used_indices_)$/;"	f	struct:Area_Location
+Area_Location	type_area.h	/^struct Area_Location$/;"	s
+Area_Settings	settings.cc	/^Area_Settings::Area_Settings()$/;"	f	class:Area_Settings
+Area_Settings	settings.h	/^struct Area_Settings$/;"	s
+Area_Skeleton	type_area.h	/^  Area_Skeleton() : id(0u) {}$/;"	f	struct:Area_Skeleton
+Area_Skeleton	type_area.h	/^  Area_Skeleton(const Area_Location& loc)$/;"	f	struct:Area_Skeleton
+Area_Skeleton	type_area.h	/^  Area_Skeleton(void* data) : id(0u)$/;"	f	struct:Area_Skeleton
+Area_Skeleton	type_area.h	/^struct Area_Skeleton$/;"	s
+Area_Usage_Listener	datatypes.h	/^class Area_Usage_Listener$/;"	c
+Attic	basic_types.h	/^  Attic(const Element_Skeleton& elem, uint64 timestamp_) : Element_Skeleton(elem), timestamp(timestamp_) {}$/;"	f	struct:Attic
+Attic	basic_types.h	/^  Attic(void* data)$/;"	f	struct:Attic
+Attic	basic_types.h	/^struct Attic : public Element_Skeleton$/;"	s
+Attic_Settings	settings.cc	/^Attic_Settings::Attic_Settings()$/;"	f	class:Attic_Settings
+Attic_Settings	settings.h	/^struct Attic_Settings$/;"	s
+Basic_Settings	settings.cc	/^Basic_Settings::Basic_Settings()$/;"	f	class:Basic_Settings
+Basic_Settings	settings.h	/^struct Basic_Settings$/;"	s
+Bbox_Double	geometry.h	/^  Bbox_Double(double south_, double west_, double north_, double east_)$/;"	f	struct:Bbox_Double
+Bbox_Double	geometry.h	/^struct Bbox_Double$/;"	s
+Bbox_Geometry	geometry.h	/^  Bbox_Geometry(double south, double west, double north, double east) : bbox(south, west, north, east) {}$/;"	f	class:Bbox_Geometry
+Bbox_Geometry	geometry.h	/^class Bbox_Geometry : public Opaque_Geometry$/;"	c
+CONCISE	datatypes.h	/^  static const uint CONCISE = 2;$/;"	m	struct:Error_Output
+Change_Entry	datatypes.h	/^  Change_Entry(const Id_Type& elem_id_, const Uint31_Index& old_idx_, const Uint31_Index& new_idx_)$/;"	f	struct:Change_Entry
+Change_Entry	datatypes.h	/^  Change_Entry(void* data)$/;"	f	struct:Change_Entry
+Change_Entry	datatypes.h	/^struct Change_Entry$/;"	s
+Clone_Settings	settings.h	/^  Clone_Settings()$/;"	f	struct:Clone_Settings
+Clone_Settings	settings.h	/^struct Clone_Settings$/;"	s
+Compound_Geometry	geometry.h	/^  Compound_Geometry() : bounds(0) {}$/;"	f	class:Compound_Geometry
+Compound_Geometry	geometry.h	/^class Compound_Geometry : public Opaque_Geometry$/;"	c
+DATA_SUFFIX	settings.h	/^  std::string DATA_SUFFIX;$/;"	m	struct:Basic_Settings
+DE__OSM3S___OVERPASS_API__CORE__BASIC_TYPES_H	basic_types.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__DATATYPES_H	datatypes.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__GEOMETRY_H	geometry.h	2;"	d
+DE__OSM3S___OVERPASS_API__CORE__INDEX_COMPUTATIONS_H	index_computations.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__PARSED_QUERY_H	parsed_query.h	2;"	d
+DE__OSM3S___OVERPASS_API__CORE__SETTINGS_H	settings.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__TYPE_AREA_H	type_area.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__TYPE_NODE_H	type_node.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__TYPE_RELATION_H	type_relation.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__TYPE_TAGS_H	type_tags.h	20;"	d
+DE__OSM3S___OVERPASS_API__CORE__TYPE_WAY_H	type_way.h	20;"	d
+Delta	type_node.h	/^  typedef Node_Skeleton Delta;$/;"	t	struct:Node_Skeleton
+Delta	type_relation.h	/^  typedef Relation_Delta Delta;$/;"	t	struct:Relation_Skeleton
+Delta	type_way.h	/^  typedef Way_Delta Delta;$/;"	t	struct:Way_Skeleton
+Delta_Comparator	basic_types.h	/^struct Delta_Comparator$/;"	s
+Delta_Ref_Comparator	basic_types.h	/^struct Delta_Ref_Comparator$/;"	s
+Derived_Skeleton	datatypes.h	/^  Derived_Skeleton(const std::string& type_name_, Id_Type id_) : type_name(type_name_), id(id_) {}$/;"	f	struct:Derived_Skeleton
+Derived_Skeleton	datatypes.h	/^struct Derived_Skeleton$/;"	s
+Derived_Structure	datatypes.h	/^  Derived_Structure(const std::string& type_name_, Id_Type id_)$/;"	f	struct:Derived_Structure
+Derived_Structure	datatypes.h	/^  Derived_Structure(const std::string& type_name_, Id_Type id_,$/;"	f	struct:Derived_Structure
+Derived_Structure	datatypes.h	/^struct Derived_Structure : public Derived_Skeleton$/;"	s
+Error_Output	datatypes.h	/^struct Error_Output$/;"	s
+ID_SUFFIX	settings.h	/^  std::string ID_SUFFIX;$/;"	m	struct:Basic_Settings
+INDEX_SUFFIX	settings.h	/^  std::string INDEX_SUFFIX;$/;"	m	struct:Basic_Settings
+Id_Type	basic_types.h	/^  typedef uint32 Id_Type;$/;"	t	struct:Uint32_Index
+Id_Type	basic_types.h	/^  typedef uint64 Id_Type;$/;"	t	struct:Uint64
+Id_Type	datatypes.h	/^  typedef Id_Type_ Id_Type;$/;"	t	struct:Change_Entry
+Id_Type	datatypes.h	/^  typedef Id_Type_ Id_Type;$/;"	t	struct:OSM_Element_Metadata_Skeleton
+Id_Type	datatypes.h	/^  typedef Uint64 Id_Type;$/;"	t	struct:Derived_Skeleton
+Id_Type	datatypes.h	/^  typedef uint32 Id_Type;$/;"	t	struct:String_Object
+Id_Type	datatypes.h	/^  typedef uint32 Id_Type;$/;"	t	struct:User_Data
+Id_Type	type_area.h	/^  typedef Area::Id_Type Id_Type;$/;"	t	struct:Area_Block
+Id_Type	type_area.h	/^  typedef Area::Id_Type Id_Type;$/;"	t	struct:Area_Skeleton
+Id_Type	type_area.h	/^  typedef Uint32_Index Id_Type;$/;"	t	struct:Area
+Id_Type	type_node.h	/^  typedef Node::Id_Type Id_Type;$/;"	t	struct:Node_Skeleton
+Id_Type	type_node.h	/^  typedef Uint64 Id_Type;$/;"	t	struct:Node
+Id_Type	type_relation.h	/^  typedef Relation::Id_Type Id_Type;$/;"	t	struct:Relation_Skeleton
+Id_Type	type_relation.h	/^  typedef Relation_Skeleton::Id_Type Id_Type;$/;"	t	struct:Relation_Delta
+Id_Type	type_relation.h	/^  typedef Uint32_Index Id_Type;$/;"	t	struct:Relation
+Id_Type	type_tags.h	/^  typedef Id_Type_ Id_Type;$/;"	t	struct:Tag_Object_Global
+Id_Type	type_way.h	/^  typedef Uint32_Index Id_Type;$/;"	t	struct:Way
+Id_Type	type_way.h	/^  typedef Way::Id_Type Id_Type;$/;"	t	struct:Way_Skeleton
+Id_Type	type_way.h	/^  typedef Way_Skeleton::Id_Type Id_Type;$/;"	t	struct:Way_Delta
+Linestring_Geometry	geometry.h	/^  Linestring_Geometry(const std::vector< Point_Double >& points_) : points(points_), bounds(0) {}$/;"	f	class:Linestring_Geometry
+Linestring_Geometry	geometry.h	/^class Linestring_Geometry : public Opaque_Geometry$/;"	c
+Logger	settings.cc	/^Logger::Logger(const std::string& db_dir)$/;"	f	class:Logger
+Logger	settings.h	/^class Logger$/;"	c
+Meta_Settings	settings.cc	/^Meta_Settings::Meta_Settings()$/;"	f	class:Meta_Settings
+Meta_Settings	settings.h	/^struct Meta_Settings$/;"	s
+NODE	type_relation.h	/^  const static uint32 NODE = 1;$/;"	m	struct:Relation_Entry
+NODES	settings.h	/^  File_Properties* NODES;$/;"	m	struct:Attic_Settings
+NODES	settings.h	/^  File_Properties* NODES;$/;"	m	struct:Osm_Base_Settings
+NODES_META	settings.h	/^  File_Properties* NODES_META;$/;"	m	struct:Attic_Settings
+NODES_META	settings.h	/^  File_Properties* NODES_META;$/;"	m	struct:Meta_Settings
+NODES_UNDELETED	settings.h	/^  File_Properties* NODES_UNDELETED;$/;"	m	struct:Attic_Settings
+NODE_CHANGELOG	settings.h	/^  File_Properties* NODE_CHANGELOG;$/;"	m	struct:Attic_Settings
+NODE_IDX_LIST	settings.h	/^  File_Properties* NODE_IDX_LIST;$/;"	m	struct:Attic_Settings
+NODE_KEYS	settings.h	/^  File_Properties* NODE_KEYS;$/;"	m	struct:Osm_Base_Settings
+NODE_TAGS_GLOBAL	settings.h	/^  File_Properties* NODE_TAGS_GLOBAL;$/;"	m	struct:Attic_Settings
+NODE_TAGS_GLOBAL	settings.h	/^  File_Properties* NODE_TAGS_GLOBAL;$/;"	m	struct:Osm_Base_Settings
+NODE_TAGS_LOCAL	settings.h	/^  File_Properties* NODE_TAGS_LOCAL;$/;"	m	struct:Attic_Settings
+NODE_TAGS_LOCAL	settings.h	/^  File_Properties* NODE_TAGS_LOCAL;$/;"	m	struct:Osm_Base_Settings
+NOW	settings.cc	/^const uint64 NOW = std::numeric_limits< unsigned long long >::max();$/;"	v
+Node	type_node.h	/^  Node() : id(0ull) {}$/;"	f	struct:Node
+Node	type_node.h	/^  Node(Id_Type id_, double lat, double lon)$/;"	f	struct:Node
+Node	type_node.h	/^  Node(Id_Type id_, uint32 ll_upper_, uint32 ll_lower__)$/;"	f	struct:Node
+Node	type_node.h	/^struct Node$/;"	s
+Node_Comparator_By_Id	type_node.h	/^struct Node_Comparator_By_Id {$/;"	s
+Node_Equal_Id	type_node.h	/^struct Node_Equal_Id {$/;"	s
+Node_Skeleton	type_node.h	/^  Node_Skeleton() : id(0ull) {}$/;"	f	struct:Node_Skeleton
+Node_Skeleton	type_node.h	/^  Node_Skeleton(Node::Id_Type id_)$/;"	f	struct:Node_Skeleton
+Node_Skeleton	type_node.h	/^  Node_Skeleton(Node::Id_Type id_, uint32 ll_lower_)$/;"	f	struct:Node_Skeleton
+Node_Skeleton	type_node.h	/^  Node_Skeleton(const Node& node)$/;"	f	struct:Node_Skeleton
+Node_Skeleton	type_node.h	/^  Node_Skeleton(void* data)$/;"	f	struct:Node_Skeleton
+Node_Skeleton	type_node.h	/^struct Node_Skeleton$/;"	s
+Null_Geometry	geometry.h	/^  Null_Geometry() {}$/;"	f	class:Null_Geometry
+Null_Geometry	geometry.h	/^class Null_Geometry : public Opaque_Geometry$/;"	c
+OSM_Element_Metadata	datatypes.h	/^  OSM_Element_Metadata() : user_id(0) {}$/;"	f	struct:OSM_Element_Metadata
+OSM_Element_Metadata	datatypes.h	/^struct OSM_Element_Metadata$/;"	s
+OSM_Element_Metadata_Skeleton	datatypes.h	/^  OSM_Element_Metadata_Skeleton() : version(0), timestamp(0), changeset(0), user_id(0) {}$/;"	f	struct:OSM_Element_Metadata_Skeleton
+OSM_Element_Metadata_Skeleton	datatypes.h	/^  OSM_Element_Metadata_Skeleton(Id_Type ref_)$/;"	f	struct:OSM_Element_Metadata_Skeleton
+OSM_Element_Metadata_Skeleton	datatypes.h	/^  OSM_Element_Metadata_Skeleton(Id_Type ref_, const OSM_Element_Metadata& meta)$/;"	f	struct:OSM_Element_Metadata_Skeleton
+OSM_Element_Metadata_Skeleton	datatypes.h	/^  OSM_Element_Metadata_Skeleton(Id_Type ref_, uint64 timestamp_)$/;"	f	struct:OSM_Element_Metadata_Skeleton
+OSM_Element_Metadata_Skeleton	datatypes.h	/^  OSM_Element_Metadata_Skeleton(void* data)$/;"	f	struct:OSM_Element_Metadata_Skeleton
+OSM_Element_Metadata_Skeleton	datatypes.h	/^struct OSM_Element_Metadata_Skeleton$/;"	s
+OSM_File_Properties	settings.cc	/^  OSM_File_Properties(const std::string& file_base_name_, uint32 block_size_,$/;"	f	struct:OSM_File_Properties
+OSM_File_Properties	settings.cc	/^struct OSM_File_Properties : public File_Properties$/;"	s	file:
+Opaque_Geometry	geometry.h	/^class Opaque_Geometry$/;"	c
+Osm_Backend_Callback	datatypes.h	/^class Osm_Backend_Callback$/;"	c
+Osm_Base_Settings	settings.cc	/^Osm_Base_Settings::Osm_Base_Settings()$/;"	f	class:Osm_Base_Settings
+Osm_Base_Settings	settings.h	/^struct Osm_Base_Settings$/;"	s
+PROGRESS	datatypes.h	/^  static const uint PROGRESS = 3;$/;"	m	struct:Error_Output
+Pair_Comparator_By_Id	datatypes.h	/^struct Pair_Comparator_By_Id {$/;"	s
+Pair_Equal_Id	datatypes.h	/^struct Pair_Equal_Id {$/;"	s
+Parsed_Query	parsed_query.h	/^  Parsed_Query() : output_handler(0), global_bbox_limitation(Bbox_Double::invalid), last_dispensed_id(0ull) {}$/;"	f	class:Parsed_Query
+Parsed_Query	parsed_query.h	/^class Parsed_Query$/;"	c
+Partial_Relation_Geometry	geometry.h	/^  Partial_Relation_Geometry() : bounds(0) {}$/;"	f	class:Partial_Relation_Geometry
+Partial_Relation_Geometry	geometry.h	/^class Partial_Relation_Geometry : public Opaque_Geometry$/;"	c
+Partial_Way_Geometry	geometry.h	/^  Partial_Way_Geometry() : bounds(0), has_coords(false) {}$/;"	f	class:Partial_Way_Geometry
+Partial_Way_Geometry	geometry.h	/^class Partial_Way_Geometry : public Opaque_Geometry$/;"	c
+Point_Double	geometry.h	/^  Point_Double(double lat_, double lon_) : lat(lat_), lon(lon_) {}$/;"	f	struct:Point_Double
+Point_Double	geometry.h	/^struct Point_Double$/;"	s
+Point_Geometry	geometry.h	/^  Point_Geometry(double lat_, double lon_) : pt(lat_, lon_) {}$/;"	f	class:Point_Geometry
+Point_Geometry	geometry.h	/^class Point_Geometry : public Opaque_Geometry$/;"	c
+QUIET	datatypes.h	/^  static const uint QUIET = 1;$/;"	m	struct:Error_Output
+Quad_Coord	basic_types.h	/^  Quad_Coord() : ll_upper(0), ll_lower(0) {}$/;"	f	struct:Quad_Coord
+Quad_Coord	basic_types.h	/^  Quad_Coord(uint32 ll_upper_, uint32 ll_lower_) : ll_upper(ll_upper_), ll_lower(ll_lower_) {}$/;"	f	struct:Quad_Coord
+Quad_Coord	basic_types.h	/^struct Quad_Coord$/;"	s
+RELATION	type_relation.h	/^  const static uint32 RELATION = 3;$/;"	m	struct:Relation_Entry
+RELATIONS	settings.h	/^  File_Properties* RELATIONS;$/;"	m	struct:Attic_Settings
+RELATIONS	settings.h	/^  File_Properties* RELATIONS;$/;"	m	struct:Osm_Base_Settings
+RELATIONS_META	settings.h	/^  File_Properties* RELATIONS_META;$/;"	m	struct:Attic_Settings
+RELATIONS_META	settings.h	/^  File_Properties* RELATIONS_META;$/;"	m	struct:Meta_Settings
+RELATIONS_UNDELETED	settings.h	/^  File_Properties* RELATIONS_UNDELETED;$/;"	m	struct:Attic_Settings
+RELATION_CHANGELOG	settings.h	/^  File_Properties* RELATION_CHANGELOG;$/;"	m	struct:Attic_Settings
+RELATION_IDX_LIST	settings.h	/^  File_Properties* RELATION_IDX_LIST;$/;"	m	struct:Attic_Settings
+RELATION_KEYS	settings.h	/^  File_Properties* RELATION_KEYS;$/;"	m	struct:Osm_Base_Settings
+RELATION_ROLES	settings.h	/^  File_Properties* RELATION_ROLES;$/;"	m	struct:Osm_Base_Settings
+RELATION_TAGS_GLOBAL	settings.h	/^  File_Properties* RELATION_TAGS_GLOBAL;$/;"	m	struct:Attic_Settings
+RELATION_TAGS_GLOBAL	settings.h	/^  File_Properties* RELATION_TAGS_GLOBAL;$/;"	m	struct:Osm_Base_Settings
+RELATION_TAGS_LOCAL	settings.h	/^  File_Properties* RELATION_TAGS_LOCAL;$/;"	m	struct:Attic_Settings
+RELATION_TAGS_LOCAL	settings.h	/^  File_Properties* RELATION_TAGS_LOCAL;$/;"	m	struct:Osm_Base_Settings
+Ref_Type	type_relation.h	/^  typedef Uint64 Ref_Type;$/;"	t	struct:Relation_Entry
+Relation	type_relation.h	/^  Relation() : id(0u) {}$/;"	f	struct:Relation
+Relation	type_relation.h	/^  Relation(Id_Type id_) : id(id_) {}$/;"	f	struct:Relation
+Relation	type_relation.h	/^  Relation(Id_Type id_, uint32 index_, const std::vector< Relation_Entry >& members_)$/;"	f	struct:Relation
+Relation	type_relation.h	/^struct Relation$/;"	s
+Relation_Comparator_By_Id	type_relation.h	/^struct Relation_Comparator_By_Id {$/;"	s
+Relation_Delta	type_relation.h	/^  Relation_Delta() : id(0u), full(false) {}$/;"	f	struct:Relation_Delta
+Relation_Delta	type_relation.h	/^  Relation_Delta(const Relation_Skeleton& reference, const Relation_Skeleton& skel)$/;"	f	struct:Relation_Delta
+Relation_Delta	type_relation.h	/^  Relation_Delta(void* data) : id(*(Id_Type*)data), full(false)$/;"	f	struct:Relation_Delta
+Relation_Delta	type_relation.h	/^struct Relation_Delta$/;"	s
+Relation_Entry	type_relation.h	/^  Relation_Entry() : ref(0ull), type(0), role(0) {}$/;"	f	struct:Relation_Entry
+Relation_Entry	type_relation.h	/^struct Relation_Entry$/;"	s
+Relation_Equal_Id	type_relation.h	/^struct Relation_Equal_Id {$/;"	s
+Relation_Skeleton	type_relation.h	/^  Relation_Skeleton() : id(0u) {}$/;"	f	struct:Relation_Skeleton
+Relation_Skeleton	type_relation.h	/^  Relation_Skeleton(Id_Type id_, const std::vector< Relation_Entry >& members_,$/;"	f	struct:Relation_Skeleton
+Relation_Skeleton	type_relation.h	/^  Relation_Skeleton(Relation::Id_Type id_) : id(id_) {}$/;"	f	struct:Relation_Skeleton
+Relation_Skeleton	type_relation.h	/^  Relation_Skeleton(const Relation& rel)$/;"	f	struct:Relation_Skeleton
+Relation_Skeleton	type_relation.h	/^  Relation_Skeleton(void* data) : id(*(Id_Type*)data)$/;"	f	struct:Relation_Skeleton
+Relation_Skeleton	type_relation.h	/^struct Relation_Skeleton$/;"	s
+SHADOW_SUFFIX	settings.h	/^  std::string SHADOW_SUFFIX;$/;"	m	struct:Basic_Settings
+Set	datatypes.h	/^struct Set$/;"	s
+String_Object	datatypes.h	/^  String_Object(std::string s) : value(s) {}$/;"	f	struct:String_Object
+String_Object	datatypes.h	/^  String_Object(void* data) : value()$/;"	f	struct:String_Object
+String_Object	datatypes.h	/^struct String_Object$/;"	s
+Tag_Entry	type_tags.h	/^struct Tag_Entry$/;"	s
+Tag_Index_Global	type_tags.h	/^  Tag_Index_Global() {}$/;"	f	struct:Tag_Index_Global
+Tag_Index_Global	type_tags.h	/^  Tag_Index_Global(const Tag_Index_Local& tag_idx) : key(tag_idx.key), value(tag_idx.value) {}$/;"	f	struct:Tag_Index_Global
+Tag_Index_Global	type_tags.h	/^  Tag_Index_Global(const std::string& key_, const std::string& value_) : key(key_), value(value_) {}$/;"	f	struct:Tag_Index_Global
+Tag_Index_Global	type_tags.h	/^  Tag_Index_Global(void* data)$/;"	f	struct:Tag_Index_Global
+Tag_Index_Global	type_tags.h	/^struct Tag_Index_Global$/;"	s
+Tag_Index_Local	type_tags.h	/^  Tag_Index_Local() {}$/;"	f	struct:Tag_Index_Local
+Tag_Index_Local	type_tags.h	/^  Tag_Index_Local(Uint31_Index index_, std::string key_, std::string value_)$/;"	f	struct:Tag_Index_Local
+Tag_Index_Local	type_tags.h	/^  Tag_Index_Local(const Tag_Entry< Id_Type >& entry)$/;"	f	struct:Tag_Index_Local
+Tag_Index_Local	type_tags.h	/^  Tag_Index_Local(void* data)$/;"	f	struct:Tag_Index_Local
+Tag_Index_Local	type_tags.h	/^struct Tag_Index_Local$/;"	s
+Tag_Object_Global	type_tags.h	/^  Tag_Object_Global() {}$/;"	f	struct:Tag_Object_Global
+Tag_Object_Global	type_tags.h	/^  Tag_Object_Global(Id_Type id_, Uint31_Index idx_) : idx(idx_), id(id_) {}$/;"	f	struct:Tag_Object_Global
+Tag_Object_Global	type_tags.h	/^  Tag_Object_Global(void* data)$/;"	f	struct:Tag_Object_Global
+Tag_Object_Global	type_tags.h	/^struct Tag_Object_Global$/;"	s
+Timestamp	datatypes.h	/^  Timestamp(int year, int month, int day, int hour, int minute, int second)$/;"	f	struct:Timestamp
+Timestamp	datatypes.h	/^  Timestamp(uint64 timestamp_) : timestamp(timestamp_) {}$/;"	f	struct:Timestamp
+Timestamp	datatypes.h	/^  Timestamp(void* data)$/;"	f	struct:Timestamp
+Timestamp	datatypes.h	/^struct Timestamp$/;"	s
+USER_DATA	settings.h	/^  File_Properties* USER_DATA;$/;"	m	struct:Meta_Settings
+USER_INDICES	settings.h	/^  File_Properties* USER_INDICES;$/;"	m	struct:Meta_Settings
+Uint31_Compare	index_computations.h	/^struct Uint31_Compare$/;"	s
+Uint31_Index	basic_types.h	/^  Uint31_Index() : Uint32_Index() {}$/;"	f	struct:Uint31_Index
+Uint31_Index	basic_types.h	/^  Uint31_Index(uint32 i) : Uint32_Index(i) {}$/;"	f	struct:Uint31_Index
+Uint31_Index	basic_types.h	/^  Uint31_Index(void* data) : Uint32_Index(*(uint32*)data) {}$/;"	f	struct:Uint31_Index
+Uint31_Index	basic_types.h	/^struct Uint31_Index : Uint32_Index$/;"	s
+Uint32_Index	basic_types.h	/^  Uint32_Index() : value(0u) {}$/;"	f	struct:Uint32_Index
+Uint32_Index	basic_types.h	/^  Uint32_Index(uint32 i) : value(i) {}$/;"	f	struct:Uint32_Index
+Uint32_Index	basic_types.h	/^  Uint32_Index(void* data) : value(*(uint32*)data) {}$/;"	f	struct:Uint32_Index
+Uint32_Index	basic_types.h	/^struct Uint32_Index$/;"	s
+Uint64	basic_types.h	/^  Uint64() : value(0ull) {}$/;"	f	struct:Uint64
+Uint64	basic_types.h	/^  Uint64(uint64 i) : value(i) {}$/;"	f	struct:Uint64
+Uint64	basic_types.h	/^  Uint64(void* data) : value(*(uint64*)data) {}$/;"	f	struct:Uint64
+Uint64	basic_types.h	/^struct Uint64$/;"	s
+Unsupported_Error	type_tags.h	/^  Unsupported_Error(const std::string& method_name_) : method_name(method_name_) {}$/;"	f	struct:Unsupported_Error
+Unsupported_Error	type_tags.h	/^struct Unsupported_Error$/;"	s
+User_Data	datatypes.h	/^  User_Data() : id(0) {}$/;"	f	struct:User_Data
+User_Data	datatypes.h	/^  User_Data(void* data)$/;"	f	struct:User_Data
+User_Data	datatypes.h	/^struct User_Data$/;"	s
+VERBOSE	datatypes.h	/^  static const uint VERBOSE = 5;$/;"	m	struct:Error_Output
+WAY	type_relation.h	/^  const static uint32 WAY = 2;$/;"	m	struct:Relation_Entry
+WAYS	settings.h	/^  File_Properties* WAYS;$/;"	m	struct:Attic_Settings
+WAYS	settings.h	/^  File_Properties* WAYS;$/;"	m	struct:Osm_Base_Settings
+WAYS_META	settings.h	/^  File_Properties* WAYS_META;$/;"	m	struct:Attic_Settings
+WAYS_META	settings.h	/^  File_Properties* WAYS_META;$/;"	m	struct:Meta_Settings
+WAYS_UNDELETED	settings.h	/^  File_Properties* WAYS_UNDELETED;$/;"	m	struct:Attic_Settings
+WAY_CHANGELOG	settings.h	/^  File_Properties* WAY_CHANGELOG;$/;"	m	struct:Attic_Settings
+WAY_IDX_LIST	settings.h	/^  File_Properties* WAY_IDX_LIST;$/;"	m	struct:Attic_Settings
+WAY_KEYS	settings.h	/^  File_Properties* WAY_KEYS;$/;"	m	struct:Osm_Base_Settings
+WAY_TAGS_GLOBAL	settings.h	/^  File_Properties* WAY_TAGS_GLOBAL;$/;"	m	struct:Attic_Settings
+WAY_TAGS_GLOBAL	settings.h	/^  File_Properties* WAY_TAGS_GLOBAL;$/;"	m	struct:Osm_Base_Settings
+WAY_TAGS_LOCAL	settings.h	/^  File_Properties* WAY_TAGS_LOCAL;$/;"	m	struct:Attic_Settings
+WAY_TAGS_LOCAL	settings.h	/^  File_Properties* WAY_TAGS_LOCAL;$/;"	m	struct:Osm_Base_Settings
+Way	type_way.h	/^  Way() : id(0u), index(0) {}$/;"	f	struct:Way
+Way	type_way.h	/^  Way(uint32 id_)$/;"	f	struct:Way
+Way	type_way.h	/^  Way(uint32 id_, uint32 index_, const std::vector< Node::Id_Type >& nds_)$/;"	f	struct:Way
+Way	type_way.h	/^struct Way$/;"	s
+Way_Comparator_By_Id	type_way.h	/^struct Way_Comparator_By_Id {$/;"	s
+Way_Delta	type_way.h	/^  Way_Delta() : id(0u), full(false) {}$/;"	f	struct:Way_Delta
+Way_Delta	type_way.h	/^  Way_Delta(const Way_Skeleton& reference, const Way_Skeleton& skel)$/;"	f	struct:Way_Delta
+Way_Delta	type_way.h	/^  Way_Delta(void* data) : id(*(Id_Type*)data), full(false)$/;"	f	struct:Way_Delta
+Way_Delta	type_way.h	/^struct Way_Delta$/;"	s
+Way_Equal_Id	type_way.h	/^struct Way_Equal_Id {$/;"	s
+Way_Skeleton	type_way.h	/^  Way_Skeleton() : id(0u) {}$/;"	f	struct:Way_Skeleton
+Way_Skeleton	type_way.h	/^  Way_Skeleton(Id_Type id_, const std::vector< Node::Id_Type >& nds_, const std::vector< Quad_Coord >& geometry_)$/;"	f	struct:Way_Skeleton
+Way_Skeleton	type_way.h	/^  Way_Skeleton(Way::Id_Type id_) : id(id_) {}$/;"	f	struct:Way_Skeleton
+Way_Skeleton	type_way.h	/^  Way_Skeleton(const Way& way)$/;"	f	struct:Way_Skeleton
+Way_Skeleton	type_way.h	/^  Way_Skeleton(void* data) : id(*(Id_Type*)data)$/;"	f	struct:Way_Skeleton
+Way_Skeleton	type_way.h	/^struct Way_Skeleton$/;"	s
+add_component	geometry.cc	/^void Compound_Geometry::add_component(Opaque_Geometry* component)$/;"	f	class:Compound_Geometry
+add_decomp_range	index_computations.h	/^inline void add_decomp_range(const std::pair< Uint32_Index, Uint32_Index >& range,$/;"	f
+add_placeholder	geometry.cc	/^void Partial_Relation_Geometry::add_placeholder()$/;"	f	class:Partial_Relation_Geometry
+add_point	geometry.cc	/^void Partial_Relation_Geometry::add_point(const Point_Double& point)$/;"	f	class:Partial_Relation_Geometry
+add_point	geometry.cc	/^void Partial_Way_Geometry::add_point(const Point_Double& point)$/;"	f	class:Partial_Way_Geometry
+add_way_placeholder	geometry.cc	/^void Partial_Relation_Geometry::add_way_placeholder()$/;"	f	class:Partial_Relation_Geometry
+add_way_point	geometry.cc	/^void Partial_Relation_Geometry::add_way_point(const Point_Double& point)$/;"	f	class:Partial_Relation_Geometry
+annotated_log	settings.cc	/^void Logger::annotated_log(const std::string& message)$/;"	f	class:Logger
+area_settings	settings.cc	/^const Area_Settings& area_settings()$/;"	f
+areas	datatypes.h	/^  std::map< Uint31_Index, std::vector< Area_Skeleton > > areas;$/;"	m	struct:Set
+attic_nodes	datatypes.h	/^  std::map< Uint32_Index, std::vector< Attic< Node_Skeleton > > > attic_nodes;$/;"	m	struct:Set
+attic_relations	datatypes.h	/^  std::map< Uint31_Index, std::vector< Attic< Relation_Skeleton > > > attic_relations;$/;"	m	struct:Set
+attic_settings	settings.cc	/^const Attic_Settings& attic_settings()$/;"	f
+attic_ways	datatypes.h	/^  std::map< Uint31_Index, std::vector< Attic< Way_Skeleton > > > attic_ways;$/;"	m	struct:Set
+base_directory	settings.h	/^  std::string base_directory;$/;"	m	struct:Basic_Settings
+basic_settings	settings.cc	/^Basic_Settings& basic_settings()$/;"	f
+bbox	geometry.h	/^  Bbox_Double bbox;$/;"	m	class:Bbox_Geometry
+binary_pair_search	datatypes.h	/^const TObject* binary_pair_search(const std::vector< std::pair< Id_Type, TObject> >& vect, Id_Type id)$/;"	f
+binary_ptr_search_for_id	datatypes.h	/^TObject* binary_ptr_search_for_id(const std::vector< TObject* >& vect, typename TObject::Id_Type id)$/;"	f
+binary_search_for_id	datatypes.h	/^const T* binary_search_for_id(const std::vector< T >& vect, typename T::Id_Type id)$/;"	f
+binary_search_for_pair_id	datatypes.h	/^const std::pair< TIndex, const TObject* >* binary_search_for_pair_id$/;"	f
+block_size	settings.cc	/^  uint32 block_size;$/;"	m	struct:OSM_File_Properties	file:
+blur_index	index_computations.h	/^inline void blur_index(uint32 distance, uint32 bitmask, uint32 lower_idx, uint32 upper_idx,$/;"	f
+bounds	geometry.h	/^  mutable Bbox_Double* bounds;$/;"	m	class:Compound_Geometry
+bounds	geometry.h	/^  mutable Bbox_Double* bounds;$/;"	m	class:Linestring_Geometry
+bounds	geometry.h	/^  mutable Bbox_Double* bounds;$/;"	m	class:Partial_Relation_Geometry
+bounds	geometry.h	/^  mutable Bbox_Double* bounds;$/;"	m	class:Partial_Way_Geometry
+calc_aligned_segments	type_area.h	/^  static bool calc_aligned_segments$/;"	f	struct:Area
+calc_bbox_bounds	index_computations.h	/^inline std::pair< Uint32_Index, Uint32_Index > calc_bbox_bounds(Uint31_Index way_rel_idx)$/;"	f
+calc_bounds	geometry.cc	/^Bbox_Double* calc_bounds(const std::vector< Opaque_Geometry* >& components)$/;"	f
+calc_bounds	geometry.cc	/^Bbox_Double* calc_bounds(const std::vector< Point_Double >& points)$/;"	f
+calc_children	index_computations.h	/^inline std::vector< Uint31_Index > calc_children(const std::vector< uint32 >& way_rel_idxs)$/;"	f
+calc_horiz_aligned_segments	type_area.h	/^  static void calc_horiz_aligned_segments$/;"	f	struct:Area
+calc_index	index_computations.h	/^inline uint32 calc_index(const std::vector< uint32 >& node_idxs)$/;"	f
+calc_index	type_area.h	/^  uint32 calc_index()$/;"	f	struct:Area_Location
+calc_index	type_relation.h	/^  static uint32 calc_index(const std::vector< uint32 >& memb_idxs)$/;"	f	struct:Relation
+calc_index	type_way.h	/^  static uint32 calc_index(const std::vector< uint32 >& nd_idxs)$/;"	f	struct:Way
+calc_node_children	index_computations.h	/^inline std::vector< Uint32_Index > calc_node_children(const std::vector< uint32 >& way_rel_idxs)$/;"	f
+calc_parents	index_computations.h	/^inline std::set< Uint31_Index > calc_parents(const std::set< Uint31_Index >& node_idxs)$/;"	f
+calc_parents	index_computations.h	/^inline std::set< std::pair< Uint31_Index, Uint31_Index > > calc_parents$/;"	f
+calc_parents	index_computations.h	/^inline std::vector< uint32 > calc_parents(const std::vector< uint32 >& node_idxs)$/;"	f
+calc_ranges	index_computations.h	/^inline std::vector< std::pair< uint32, uint32 > > calc_ranges$/;"	f
+calc_segment_idxs	type_way.h	/^inline std::vector< Uint31_Index > calc_segment_idxs(const std::vector< uint32 >& nd_idxs)$/;"	f
+calc_vert_aligned_segments	type_area.h	/^  static void calc_vert_aligned_segments$/;"	f	struct:Area
+center_lat	geometry.cc	/^double Bbox_Double::center_lat() const$/;"	f	class:Bbox_Double
+center_lat	geometry.cc	/^double Compound_Geometry::center_lat() const$/;"	f	class:Compound_Geometry
+center_lat	geometry.cc	/^double Linestring_Geometry::center_lat() const$/;"	f	class:Linestring_Geometry
+center_lat	geometry.cc	/^double Partial_Relation_Geometry::center_lat() const$/;"	f	class:Partial_Relation_Geometry
+center_lat	geometry.cc	/^double Partial_Way_Geometry::center_lat() const$/;"	f	class:Partial_Way_Geometry
+center_lat	geometry.h	/^  virtual double center_lat() const { return 0; }$/;"	f	class:Null_Geometry
+center_lat	geometry.h	/^  virtual double center_lat() const { return bbox.center_lat(); }$/;"	f	class:Bbox_Geometry
+center_lat	geometry.h	/^  virtual double center_lat() const { return pt.lat; }$/;"	f	class:Point_Geometry
+center_lon	geometry.cc	/^double Bbox_Double::center_lon() const$/;"	f	class:Bbox_Double
+center_lon	geometry.cc	/^double Compound_Geometry::center_lon() const$/;"	f	class:Compound_Geometry
+center_lon	geometry.cc	/^double Linestring_Geometry::center_lon() const$/;"	f	class:Linestring_Geometry
+center_lon	geometry.cc	/^double Partial_Relation_Geometry::center_lon() const$/;"	f	class:Partial_Relation_Geometry
+center_lon	geometry.cc	/^double Partial_Way_Geometry::center_lon() const$/;"	f	class:Partial_Way_Geometry
+center_lon	geometry.h	/^  virtual double center_lon() const { return 0; }$/;"	f	class:Null_Geometry
+center_lon	geometry.h	/^  virtual double center_lon() const { return bbox.center_lon(); }$/;"	f	class:Bbox_Geometry
+center_lon	geometry.h	/^  virtual double center_lon() const { return pt.lon; }$/;"	f	class:Point_Geometry
+changeset	datatypes.h	/^  uint32 changeset;$/;"	m	struct:OSM_Element_Metadata
+changeset	datatypes.h	/^  uint32 changeset;$/;"	m	struct:OSM_Element_Metadata_Skeleton
+clear	datatypes.h	/^  void clear()$/;"	f	struct:Set
+components	geometry.h	/^  std::vector< Opaque_Geometry* > components;$/;"	m	class:Compound_Geometry
+components	geometry.h	/^  std::vector< Opaque_Geometry* > components;$/;"	m	class:Partial_Relation_Geometry
+compression_method	settings.h	/^  uint32 compression_method;$/;"	m	struct:Basic_Settings
+compression_method	settings.h	/^  uint32 compression_method;$/;"	m	struct:Clone_Settings
+contains	geometry.cc	/^bool Bbox_Double::contains(const Point_Double& point) const$/;"	f	class:Bbox_Double
+coors	type_area.h	/^  std::vector< uint64 > coors;$/;"	m	struct:Area_Block
+copy_elems	basic_types.h	/^void copy_elems(const std::vector< Object >& source, std::vector< std::pair< uint, Object > >& target)$/;"	f
+day	datatypes.h	/^  int day() const { return day(timestamp); }$/;"	f	struct:Timestamp
+day	datatypes.h	/^  static int day(uint64 timestamp) { return ((timestamp>>17) & 0x1f); }$/;"	f	struct:Timestamp
+dec	basic_types.h	/^inline Uint32_Index dec(Uint32_Index idx)$/;"	f
+deriveds	datatypes.h	/^  std::map< Uint31_Index, std::vector< Derived_Structure > > deriveds;$/;"	m	struct:Set
+difference	basic_types.h	/^inline unsigned long long difference(Uint31_Index lhs, Uint31_Index rhs)$/;"	f
+difference	basic_types.h	/^inline unsigned long long difference(Uint32_Index lhs, Uint32_Index rhs)$/;"	f
+dispense_derived_id	parsed_query.h	/^  Derived_Skeleton::Id_Type dispense_derived_id() { return ++last_dispensed_id; }$/;"	f	class:Parsed_Query
+east	geometry.cc	/^double Compound_Geometry::east() const$/;"	f	class:Compound_Geometry
+east	geometry.cc	/^double Linestring_Geometry::east() const$/;"	f	class:Linestring_Geometry
+east	geometry.cc	/^double Partial_Relation_Geometry::east() const$/;"	f	class:Partial_Relation_Geometry
+east	geometry.cc	/^double Partial_Way_Geometry::east() const$/;"	f	class:Partial_Way_Geometry
+east	geometry.h	/^  double south, west, north, east;$/;"	m	struct:Bbox_Double
+east	geometry.h	/^  virtual double east() const { return 0; }$/;"	f	class:Null_Geometry
+east	geometry.h	/^  virtual double east() const { return bbox.east; }$/;"	f	class:Bbox_Geometry
+east	geometry.h	/^  virtual double east() const { return pt.lon; }$/;"	f	class:Point_Geometry
+elem_id	datatypes.h	/^  Id_Type elem_id;$/;"	m	struct:Change_Entry
+expand	type_relation.h	/^  Relation_Skeleton expand(const Relation_Skeleton& reference) const$/;"	f	struct:Relation_Delta
+expand	type_way.h	/^  Way_Skeleton expand(const Way_Skeleton& reference) const$/;"	f	struct:Way_Delta
+expand_diff	basic_types.h	/^void expand_diff(const std::vector< Object >& reference,$/;"	f
+file_base_name	settings.cc	/^  std::string file_base_name;$/;"	m	struct:OSM_File_Properties	file:
+formulate_range_query	type_tags.h	/^void formulate_range_query$/;"	f
+full	type_relation.h	/^  bool full;$/;"	m	struct:Relation_Delta
+full	type_way.h	/^  bool full;$/;"	m	struct:Way_Delta
+generate_ids_by_coarse	type_tags.h	/^void generate_ids_by_coarse$/;"	f
+geometry	type_way.h	/^  std::vector< Quad_Coord > geometry;$/;"	m	struct:Way
+geometry	type_way.h	/^  std::vector< Quad_Coord > geometry;$/;"	m	struct:Way_Skeleton
+geometry_added	type_way.h	/^  std::vector< std::pair< uint, Quad_Coord > > geometry_added;$/;"	m	struct:Way_Delta
+geometry_removed	type_way.h	/^  std::vector< uint > geometry_removed;$/;"	m	struct:Way_Delta
+get_block_size	settings.cc	/^  uint32 get_block_size() const { return block_size\/8; }$/;"	f	struct:OSM_File_Properties
+get_components	geometry.h	/^  virtual const std::vector< Opaque_Geometry* >* get_components() const { return &components; }$/;"	f	class:Compound_Geometry
+get_components	geometry.h	/^  virtual const std::vector< Opaque_Geometry* >* get_components() const { return &components; }$/;"	f	class:Partial_Relation_Geometry
+get_components	geometry.h	/^  virtual const std::vector< Opaque_Geometry* >* get_components() const { return 0; }$/;"	f	class:Opaque_Geometry
+get_compression_factor	settings.cc	/^  uint32 get_compression_factor() const { return 8; }$/;"	f	struct:OSM_File_Properties
+get_compression_method	settings.cc	/^  uint32 get_compression_method() const { return basic_settings().compression_method; }$/;"	f	struct:OSM_File_Properties
+get_data_footprint	settings.cc	/^  std::vector< bool > get_data_footprint(const std::string& db_dir) const$/;"	f	struct:OSM_File_Properties
+get_data_suffix	settings.cc	/^  const std::string& get_data_suffix() const { return basic_settings().DATA_SUFFIX; }$/;"	f	struct:OSM_File_Properties
+get_file_name_trunk	settings.cc	/^  const std::string& get_file_name_trunk() const { return file_base_name; }$/;"	f	struct:OSM_File_Properties
+get_global_bbox_limitation	parsed_query.h	/^  const Bbox_Double& get_global_bbox_limitation() const { return global_bbox_limitation; }$/;"	f	class:Parsed_Query
+get_id	type_area.h	/^  static Id_Type get_id(void* data)$/;"	f	struct:Area_Skeleton
+get_id	type_node.h	/^  static Id_Type get_id(void* data)$/;"	f	struct:Node_Skeleton
+get_id	type_relation.h	/^  static Id_Type get_id(void* data)$/;"	f	struct:Relation_Skeleton
+get_id	type_way.h	/^  static Id_Type get_id(void* data)$/;"	f	struct:Way_Skeleton
+get_id_suffix	settings.cc	/^  const std::string& get_id_suffix() const { return basic_settings().ID_SUFFIX; }  $/;"	f	struct:OSM_File_Properties
+get_index_suffix	settings.cc	/^  const std::string& get_index_suffix() const { return basic_settings().INDEX_SUFFIX; }$/;"	f	struct:OSM_File_Properties
+get_input_params	parsed_query.h	/^  const std::map< std::string, std::string >& get_input_params() const { return input_params; }$/;"	f	class:Parsed_Query
+get_line_geometry	geometry.h	/^  virtual const std::vector< Point_Double >* get_line_geometry() const { return &points; }$/;"	f	class:Linestring_Geometry
+get_line_geometry	geometry.h	/^  virtual const std::vector< Point_Double >* get_line_geometry() const { return 0; }$/;"	f	class:Opaque_Geometry
+get_line_geometry	geometry.h	/^  virtual const std::vector< Point_Double >* get_line_geometry() const { return 0; }$/;"	f	class:Partial_Way_Geometry
+get_logfile_name	settings.cc	/^const std::string& get_logfile_name()$/;"	f
+get_map_block_size	settings.cc	/^  uint32 get_map_block_size() const { return map_block_size\/8; }$/;"	f	struct:OSM_File_Properties
+get_map_compression_factor	settings.cc	/^  uint32 get_map_compression_factor() const { return 8; }$/;"	f	struct:OSM_File_Properties
+get_map_compression_method	settings.cc	/^  uint32 get_map_compression_method() const { return basic_settings().map_compression_method; }$/;"	f	struct:OSM_File_Properties
+get_map_footprint	settings.cc	/^  std::vector< bool > get_map_footprint(const std::string& db_dir) const$/;"	f	struct:OSM_File_Properties
+get_output_handler	parsed_query.h	/^  Output_Handler* get_output_handler() const { return output_handler; }$/;"	f	class:Parsed_Query
+get_ranges_32	index_computations.h	/^inline std::set< std::pair< Uint32_Index, Uint32_Index > > get_ranges_32($/;"	f
+get_shadow_suffix	settings.cc	/^  const std::string& get_shadow_suffix() const { return basic_settings().SHADOW_SUFFIX; }$/;"	f	struct:OSM_File_Properties
+global_bbox_limitation	parsed_query.h	/^  Bbox_Double global_bbox_limitation;$/;"	m	class:Parsed_Query
+has_bbox	geometry.cc	/^bool Compound_Geometry::has_bbox() const$/;"	f	class:Compound_Geometry
+has_bbox	geometry.cc	/^bool Partial_Relation_Geometry::has_bbox() const$/;"	f	class:Partial_Relation_Geometry
+has_bbox	geometry.h	/^  virtual bool has_bbox() const { return false; }$/;"	f	class:Null_Geometry
+has_bbox	geometry.h	/^  virtual bool has_bbox() const { return has_coords; }$/;"	f	class:Partial_Way_Geometry
+has_bbox	geometry.h	/^  virtual bool has_bbox() const { return true; }$/;"	f	class:Bbox_Geometry
+has_bbox	geometry.h	/^  virtual bool has_bbox() const { return true; }$/;"	f	class:Linestring_Geometry
+has_bbox	geometry.h	/^  virtual bool has_bbox() const { return true; }$/;"	f	class:Point_Geometry
+has_center	geometry.cc	/^bool Compound_Geometry::has_center() const$/;"	f	class:Compound_Geometry
+has_center	geometry.cc	/^bool Partial_Relation_Geometry::has_center() const$/;"	f	class:Partial_Relation_Geometry
+has_center	geometry.h	/^  virtual bool has_center() const { return false; }$/;"	f	class:Null_Geometry
+has_center	geometry.h	/^  virtual bool has_center() const { return has_coords; }$/;"	f	class:Partial_Way_Geometry
+has_center	geometry.h	/^  virtual bool has_center() const { return true; }$/;"	f	class:Bbox_Geometry
+has_center	geometry.h	/^  virtual bool has_center() const { return true; }$/;"	f	class:Linestring_Geometry
+has_center	geometry.h	/^  virtual bool has_center() const { return true; }$/;"	f	class:Point_Geometry
+has_components	geometry.h	/^  virtual bool has_components() const { return false; }$/;"	f	class:Bbox_Geometry
+has_components	geometry.h	/^  virtual bool has_components() const { return false; }$/;"	f	class:Linestring_Geometry
+has_components	geometry.h	/^  virtual bool has_components() const { return false; }$/;"	f	class:Null_Geometry
+has_components	geometry.h	/^  virtual bool has_components() const { return false; }$/;"	f	class:Partial_Way_Geometry
+has_components	geometry.h	/^  virtual bool has_components() const { return false; }$/;"	f	class:Point_Geometry
+has_components	geometry.h	/^  virtual bool has_components() const { return true; }$/;"	f	class:Compound_Geometry
+has_components	geometry.h	/^  virtual bool has_components() const { return true; }$/;"	f	class:Partial_Relation_Geometry
+has_coords	geometry.h	/^  bool has_coords;$/;"	m	class:Partial_Relation_Geometry
+has_coords	geometry.h	/^  bool has_coords;$/;"	m	class:Partial_Way_Geometry
+has_faithful_relation_geometry	geometry.h	/^  virtual bool has_faithful_relation_geometry() const { return false; }$/;"	f	class:Bbox_Geometry
+has_faithful_relation_geometry	geometry.h	/^  virtual bool has_faithful_relation_geometry() const { return false; }$/;"	f	class:Linestring_Geometry
+has_faithful_relation_geometry	geometry.h	/^  virtual bool has_faithful_relation_geometry() const { return false; }$/;"	f	class:Null_Geometry
+has_faithful_relation_geometry	geometry.h	/^  virtual bool has_faithful_relation_geometry() const { return false; }$/;"	f	class:Partial_Way_Geometry
+has_faithful_relation_geometry	geometry.h	/^  virtual bool has_faithful_relation_geometry() const { return false; }$/;"	f	class:Point_Geometry
+has_faithful_relation_geometry	geometry.h	/^  virtual bool has_faithful_relation_geometry() const { return true; }$/;"	f	class:Compound_Geometry
+has_faithful_relation_geometry	geometry.h	/^  virtual bool has_faithful_relation_geometry() const { return true; }$/;"	f	class:Partial_Relation_Geometry
+has_faithful_way_geometry	geometry.h	/^  virtual bool has_faithful_way_geometry() const { return false; }$/;"	f	class:Bbox_Geometry
+has_faithful_way_geometry	geometry.h	/^  virtual bool has_faithful_way_geometry() const { return false; }$/;"	f	class:Compound_Geometry
+has_faithful_way_geometry	geometry.h	/^  virtual bool has_faithful_way_geometry() const { return false; }$/;"	f	class:Null_Geometry
+has_faithful_way_geometry	geometry.h	/^  virtual bool has_faithful_way_geometry() const { return false; }$/;"	f	class:Partial_Relation_Geometry
+has_faithful_way_geometry	geometry.h	/^  virtual bool has_faithful_way_geometry() const { return false; }$/;"	f	class:Point_Geometry
+has_faithful_way_geometry	geometry.h	/^  virtual bool has_faithful_way_geometry() const { return true; }$/;"	f	class:Linestring_Geometry
+has_faithful_way_geometry	geometry.h	/^  virtual bool has_faithful_way_geometry() const { return true; }$/;"	f	class:Partial_Way_Geometry
+has_line_geometry	geometry.h	/^  virtual bool has_line_geometry() const { return false; }$/;"	f	class:Bbox_Geometry
+has_line_geometry	geometry.h	/^  virtual bool has_line_geometry() const { return false; }$/;"	f	class:Compound_Geometry
+has_line_geometry	geometry.h	/^  virtual bool has_line_geometry() const { return false; }$/;"	f	class:Null_Geometry
+has_line_geometry	geometry.h	/^  virtual bool has_line_geometry() const { return false; }$/;"	f	class:Partial_Relation_Geometry
+has_line_geometry	geometry.h	/^  virtual bool has_line_geometry() const { return false; }$/;"	f	class:Partial_Way_Geometry
+has_line_geometry	geometry.h	/^  virtual bool has_line_geometry() const { return false; }$/;"	f	class:Point_Geometry
+has_line_geometry	geometry.h	/^  virtual bool has_line_geometry() const { return true; }$/;"	f	class:Linestring_Geometry
+has_multiline_geometry	geometry.h	/^  virtual bool has_multiline_geometry() const { return false; }$/;"	f	class:Bbox_Geometry
+has_multiline_geometry	geometry.h	/^  virtual bool has_multiline_geometry() const { return false; }$/;"	f	class:Linestring_Geometry
+has_multiline_geometry	geometry.h	/^  virtual bool has_multiline_geometry() const { return false; }$/;"	f	class:Null_Geometry
+has_multiline_geometry	geometry.h	/^  virtual bool has_multiline_geometry() const { return false; }$/;"	f	class:Point_Geometry
+has_multiline_geometry	geometry.h	/^  virtual bool has_multiline_geometry() const { return has_coords; }$/;"	f	class:Partial_Way_Geometry
+has_multiline_geometry	geometry.h	/^  virtual bool has_multiline_geometry() const { return true; }$/;"	f	class:Compound_Geometry
+has_multiline_geometry	geometry.h	/^  virtual bool has_multiline_geometry() const { return true; }$/;"	f	class:Partial_Relation_Geometry
+hour	datatypes.h	/^  int hour() const { return hour(timestamp); }$/;"	f	struct:Timestamp
+hour	datatypes.h	/^  static int hour(uint64 timestamp) { return ((timestamp>>12) & 0x1f); }$/;"	f	struct:Timestamp
+id	datatypes.h	/^  Id_Type id;$/;"	m	struct:Derived_Skeleton
+id	datatypes.h	/^  Id_Type id;$/;"	m	struct:User_Data
+id	type_area.h	/^  Id_Type id;$/;"	m	struct:Area_Block
+id	type_area.h	/^  Id_Type id;$/;"	m	struct:Area_Skeleton
+id	type_area.h	/^  uint32 id;$/;"	m	struct:Area_Location
+id	type_node.h	/^  Id_Type id;$/;"	m	struct:Node
+id	type_node.h	/^  Node::Id_Type id;$/;"	m	struct:Node_Skeleton
+id	type_relation.h	/^  Id_Type id;$/;"	m	struct:Relation
+id	type_relation.h	/^  Id_Type id;$/;"	m	struct:Relation_Delta
+id	type_relation.h	/^  Id_Type id;$/;"	m	struct:Relation_Skeleton
+id	type_tags.h	/^  Id_Type id;$/;"	m	struct:Tag_Object_Global
+id	type_way.h	/^  Id_Type id;$/;"	m	struct:Way
+id	type_way.h	/^  Id_Type id;$/;"	m	struct:Way_Delta
+id	type_way.h	/^  Id_Type id;$/;"	m	struct:Way_Skeleton
+id_max_size_of	settings.cc	/^  uint32 id_max_size_of() const$/;"	f	struct:OSM_File_Properties
+ids	type_tags.h	/^  std::vector< Id_Type > ids;$/;"	m	struct:Tag_Entry
+idx	type_tags.h	/^  Uint31_Index idx;$/;"	m	struct:Tag_Object_Global
+ilat	index_computations.h	/^inline uint32 ilat(double lat)$/;"	f
+ilat	index_computations.h	/^inline uint32 ilat(uint32 ll_upper, uint32 ll_lower)$/;"	f
+ilat_	index_computations.h	/^inline uint32 ilat_(double lat)$/;"	f
+ilon	index_computations.h	/^inline int32 ilon(double lon)$/;"	f
+ilon	index_computations.h	/^inline int32 ilon(uint32 ll_upper, uint32 ll_lower)$/;"	f
+ilon_	index_computations.h	/^inline int32 ilon_(double lon)$/;"	f
+inc	basic_types.h	/^inline Uint31_Index inc(Uint31_Index idx)$/;"	f
+inc	basic_types.h	/^inline Uint32_Index inc(Uint32_Index idx)$/;"	f
+index	type_node.h	/^  uint32 index;$/;"	m	struct:Node
+index	type_relation.h	/^  uint32 index;$/;"	m	struct:Relation
+index	type_tags.h	/^  uint32 index;$/;"	m	struct:Tag_Entry
+index	type_tags.h	/^  uint32 index;$/;"	m	struct:Tag_Index_Local
+index	type_way.h	/^  uint32 index;$/;"	m	struct:Way
+indicates_geometry	type_relation.h	/^  static bool indicates_geometry(Uint31_Index index)$/;"	f	struct:Relation
+indicates_geometry	type_way.h	/^  static bool indicates_geometry(Uint31_Index index)$/;"	f	struct:Way
+input_params	parsed_query.h	/^  std::map< std::string, std::string > input_params;$/;"	m	class:Parsed_Query
+int16	basic_types.h	/^typedef short int int16;$/;"	t
+int32	basic_types.h	/^typedef int int32;$/;"	t
+int64	basic_types.h	/^typedef long long int64;$/;"	t
+int8	basic_types.h	/^typedef char int8;$/;"	t
+intersect_ranges	index_computations.h	/^std::set< std::pair< Index, Index > > intersect_ranges$/;"	f
+intersects	geometry.cc	/^bool Bbox_Double::intersects(const Point_Double& from, const Point_Double& to) const$/;"	f	class:Bbox_Double
+invalid	geometry.h	/^  const static Bbox_Double invalid;$/;"	m	struct:Bbox_Double
+keep_attic	datatypes.h	/^typedef enum { only_data, keep_meta, keep_attic } meta_modes;$/;"	e	enum:__anon1
+keep_meta	datatypes.h	/^typedef enum { only_data, keep_meta, keep_attic } meta_modes;$/;"	e	enum:__anon1
+key	type_tags.h	/^  std::string key;$/;"	m	struct:Tag_Entry
+key	type_tags.h	/^  std::string key;$/;"	m	struct:Tag_Index_Global
+key	type_tags.h	/^  std::string key;$/;"	m	struct:Tag_Index_Local
+last_dispensed_id	parsed_query.h	/^  Derived_Skeleton::Id_Type last_dispensed_id;$/;"	m	class:Parsed_Query
+lat	geometry.h	/^  double lat;$/;"	m	struct:Point_Double
+lat	index_computations.h	/^inline double lat(uint32 ll_upper, uint32 ll_lower)$/;"	f
+linestrings	geometry.h	/^  mutable std::vector< std::vector< Point_Double > >* linestrings;$/;"	m	class:Compound_Geometry
+linestrings	geometry.h	/^  mutable std::vector< std::vector< Point_Double > >* linestrings;$/;"	m	class:Partial_Relation_Geometry
+ll_lower	basic_types.h	/^  uint32 ll_lower;$/;"	m	struct:Quad_Coord
+ll_lower	index_computations.h	/^inline uint32 ll_lower(double lat, double lon)$/;"	f
+ll_lower	index_computations.h	/^inline uint32 ll_lower(uint32 ilat, int32 ilon)$/;"	f
+ll_lower	type_node.h	/^  uint32 ll_lower;$/;"	m	struct:Node_Skeleton
+ll_lower_	type_node.h	/^  uint32 ll_lower_;$/;"	m	struct:Node
+ll_lower_a	type_area.h	/^  uint64 ll_lower_a, ll_lower_b;$/;"	m	struct:Aligned_Segment
+ll_lower_b	type_area.h	/^  uint64 ll_lower_a, ll_lower_b;$/;"	m	struct:Aligned_Segment
+ll_upper	basic_types.h	/^  uint32 ll_upper;$/;"	m	struct:Quad_Coord
+ll_upper	index_computations.h	/^inline uint32 ll_upper(uint32 ilat, int32 ilon)$/;"	f
+ll_upper_	index_computations.h	/^inline uint32 ll_upper_(double lat, double lon)$/;"	f
+ll_upper_	index_computations.h	/^inline uint32 ll_upper_(uint32 ilat, int32 ilon)$/;"	f
+ll_upper_	type_area.h	/^  uint32 ll_upper_;$/;"	m	struct:Aligned_Segment
+logfile_full_name	settings.h	/^    std::string logfile_full_name;$/;"	m	class:Logger
+logfile_name	settings.h	/^  std::string logfile_name;$/;"	m	struct:Basic_Settings
+lon	geometry.h	/^  double lon;$/;"	m	struct:Point_Double
+lon	index_computations.h	/^inline double lon(uint32 ll_upper, uint32 ll_lower)$/;"	f
+make_delta	basic_types.h	/^void make_delta(const std::vector< Object >& source, const std::vector< Object >& reference,$/;"	f
+make_interval	index_computations.h	/^inline std::pair< Uint31_Index, Uint31_Index > make_interval(uint32 idx)$/;"	f
+map_block_size	settings.cc	/^  uint32 map_block_size;$/;"	m	struct:OSM_File_Properties	file:
+map_compression_method	settings.h	/^  uint32 map_compression_method;$/;"	m	struct:Basic_Settings
+map_compression_method	settings.h	/^  uint32 map_compression_method;$/;"	m	struct:Clone_Settings
+max_num_processes	settings.h	/^  uint max_num_processes;$/;"	m	struct:Area_Settings
+max_num_processes	settings.h	/^  uint max_num_processes;$/;"	m	struct:Osm_Base_Settings
+max_size_of	basic_types.h	/^  static uint32 max_size_of() { return 8; }$/;"	f	struct:Uint64
+max_size_of	basic_types.h	/^  static uint32 max_size_of()$/;"	f	struct:Uint32_Index
+max_size_of	datatypes.h	/^  static uint32 max_size_of()$/;"	f	struct:Timestamp
+max_size_of	type_tags.h	/^  static uint32 max_size_of()$/;"	f	struct:Tag_Index_Global
+max_size_of	type_tags.h	/^  static uint32 max_size_of()$/;"	f	struct:Tag_Index_Local
+max_size_of	type_tags.h	/^  static uint32 max_size_of()$/;"	f	struct:Tag_Object_Global
+members	type_relation.h	/^  std::vector< Relation_Entry > members;$/;"	m	struct:Relation
+members	type_relation.h	/^  std::vector< Relation_Entry > members;$/;"	m	struct:Relation_Skeleton
+members_added	type_relation.h	/^  std::vector< std::pair< uint, Relation_Entry > > members_added;$/;"	m	struct:Relation_Delta
+members_removed	type_relation.h	/^  std::vector< uint > members_removed;$/;"	m	struct:Relation_Delta
+meta_modes	datatypes.h	/^typedef enum { only_data, keep_meta, keep_attic } meta_modes;$/;"	t	typeref:enum:__anon1
+meta_settings	settings.cc	/^const Meta_Settings& meta_settings()$/;"	f
+method_name	type_tags.h	/^  std::string method_name;$/;"	m	struct:Unsupported_Error
+minute	datatypes.h	/^  int minute() const { return minute(timestamp); }$/;"	f	struct:Timestamp
+minute	datatypes.h	/^  static int minute(uint64 timestamp) { return ((timestamp>>6) & 0x3f); }$/;"	f	struct:Timestamp
+month	datatypes.h	/^  int month() const { return month(timestamp); }$/;"	f	struct:Timestamp
+month	datatypes.h	/^  static int month(uint64 timestamp) { return ((timestamp>>22) & 0xf); }$/;"	f	struct:Timestamp
+name	datatypes.h	/^  std::string name;$/;"	m	struct:User_Data
+name_of_type	datatypes.h	/^std::string name_of_type() { return "[undefined]"; }$/;"	f
+name_of_type	datatypes.h	/^template< > inline std::string name_of_type< Area_Skeleton >() { return "Area"; }$/;"	f
+name_of_type	datatypes.h	/^template< > inline std::string name_of_type< Node_Skeleton >() { return "Node"; }$/;"	f
+name_of_type	datatypes.h	/^template< > inline std::string name_of_type< Relation_Skeleton >() { return "Relation"; }$/;"	f
+name_of_type	datatypes.h	/^template< > inline std::string name_of_type< Way_Skeleton >() { return "Way"; }$/;"	f
+nds	type_way.h	/^  std::vector< Node::Id_Type > nds;$/;"	m	struct:Way
+nds	type_way.h	/^  std::vector< Node::Id_Type > nds;$/;"	m	struct:Way_Skeleton
+nds_added	type_way.h	/^  std::vector< std::pair< uint, Node::Id_Type > > nds_added;$/;"	m	struct:Way_Delta
+nds_removed	type_way.h	/^  std::vector< uint > nds_removed;$/;"	m	struct:Way_Delta
+new_data_index	settings.cc	/^  File_Blocks_Index_Base* new_data_index$/;"	f	struct:OSM_File_Properties
+new_idx	datatypes.h	/^  Uint31_Index new_idx;$/;"	m	struct:Change_Entry
+node_idxs	type_relation.h	/^  std::vector< Uint31_Index > node_idxs;$/;"	m	struct:Relation
+node_idxs	type_relation.h	/^  std::vector< Uint31_Index > node_idxs;$/;"	m	struct:Relation_Skeleton
+node_idxs_added	type_relation.h	/^  std::vector< std::pair< uint, Uint31_Index > > node_idxs_added;$/;"	m	struct:Relation_Delta
+node_idxs_removed	type_relation.h	/^  std::vector< uint > node_idxs_removed;$/;"	m	struct:Relation_Delta
+nodes	datatypes.h	/^  std::map< Uint32_Index, std::vector< Node_Skeleton > > nodes;$/;"	m	struct:Set
+north	geometry.cc	/^double Compound_Geometry::north() const$/;"	f	class:Compound_Geometry
+north	geometry.cc	/^double Linestring_Geometry::north() const$/;"	f	class:Linestring_Geometry
+north	geometry.cc	/^double Partial_Relation_Geometry::north() const$/;"	f	class:Partial_Relation_Geometry
+north	geometry.cc	/^double Partial_Way_Geometry::north() const$/;"	f	class:Partial_Way_Geometry
+north	geometry.h	/^  double south, west, north, east;$/;"	m	struct:Bbox_Double
+north	geometry.h	/^  virtual double north() const { return 0; }$/;"	f	class:Null_Geometry
+north	geometry.h	/^  virtual double north() const { return bbox.north; }$/;"	f	class:Bbox_Geometry
+north	geometry.h	/^  virtual double north() const { return pt.lat; }$/;"	f	class:Point_Geometry
+old_idx	datatypes.h	/^  Uint31_Index old_idx;$/;"	m	struct:Change_Entry
+only_data	datatypes.h	/^typedef enum { only_data, keep_meta, keep_attic } meta_modes;$/;"	e	enum:__anon1
+operator ()	basic_types.h	/^  bool operator()(const Attic& lhs, const Attic& rhs) const$/;"	f	struct:Delta_Comparator
+operator ()	basic_types.h	/^  bool operator()(const Attic* lhs, const Attic* rhs) const$/;"	f	struct:Delta_Ref_Comparator
+operator ()	datatypes.h	/^  bool operator() (const std::pair< First, Second >& a, const std::pair< First, Second >& b)$/;"	f	struct:Pair_Comparator_By_Id
+operator ()	datatypes.h	/^  bool operator() (const std::pair< First, Second >& a, const std::pair< First, Second >& b)$/;"	f	struct:Pair_Equal_Id
+operator ()	index_computations.h	/^  bool operator()(uint32 a, uint32 b) const$/;"	f	struct:Uint31_Compare
+operator ()	type_node.h	/^  bool operator() (const Node& a, const Node& b)$/;"	f	struct:Node_Comparator_By_Id
+operator ()	type_node.h	/^  bool operator() (const Node& a, const Node& b)$/;"	f	struct:Node_Equal_Id
+operator ()	type_node.h	/^  bool operator() (const Node* a, const Node* b)$/;"	f	struct:Node_Comparator_By_Id
+operator ()	type_node.h	/^  bool operator() (const Node* a, const Node* b)$/;"	f	struct:Node_Equal_Id
+operator ()	type_relation.h	/^  bool operator() (const Relation* a, const Relation* b)$/;"	f	struct:Relation_Comparator_By_Id
+operator ()	type_relation.h	/^  bool operator() (const Relation* a, const Relation* b)$/;"	f	struct:Relation_Equal_Id
+operator ()	type_way.h	/^  bool operator() (const Way* a, const Way* b)$/;"	f	struct:Way_Comparator_By_Id
+operator ()	type_way.h	/^  bool operator() (const Way* a, const Way* b)$/;"	f	struct:Way_Equal_Id
+operator +	basic_types.h	/^  Uint32_Index operator+(Uint32_Index offset) const$/;"	f	struct:Uint32_Index
+operator +	basic_types.h	/^  Uint64 operator+(Uint64 offset) const$/;"	f	struct:Uint64
+operator ++	basic_types.h	/^  Uint32_Index operator++()$/;"	f	struct:Uint32_Index
+operator ++	basic_types.h	/^  Uint64 operator++()$/;"	f	struct:Uint64
+operator +=	basic_types.h	/^  Uint32_Index operator+=(Uint32_Index offset)$/;"	f	struct:Uint32_Index
+operator +=	basic_types.h	/^  Uint64 operator+=(Uint64 offset)$/;"	f	struct:Uint64
+operator <	basic_types.h	/^  bool operator<(const Attic& rhs) const$/;"	f	struct:Attic
+operator <	basic_types.h	/^  bool operator<(const Uint31_Index& index) const$/;"	f	struct:Uint31_Index
+operator <	basic_types.h	/^  bool operator<(const Uint32_Index& index) const$/;"	f	struct:Uint32_Index
+operator <	basic_types.h	/^  bool operator<(const Uint64& index) const$/;"	f	struct:Uint64
+operator <	datatypes.h	/^  bool operator<(const Change_Entry& rhs) const$/;"	f	struct:Change_Entry
+operator <	datatypes.h	/^  bool operator<(const Derived_Structure& a) const$/;"	f	struct:Derived_Structure
+operator <	datatypes.h	/^  bool operator<(const OSM_Element_Metadata&) const { return false; }$/;"	f	struct:OSM_Element_Metadata
+operator <	datatypes.h	/^  bool operator<(const OSM_Element_Metadata_Skeleton& a) const$/;"	f	struct:OSM_Element_Metadata_Skeleton
+operator <	datatypes.h	/^  bool operator<(const String_Object& index) const$/;"	f	struct:String_Object
+operator <	datatypes.h	/^  bool operator<(const Timestamp& rhs) const$/;"	f	struct:Timestamp
+operator <	datatypes.h	/^  bool operator<(const User_Data& a) const$/;"	f	struct:User_Data
+operator <	type_area.h	/^  bool operator<(const Aligned_Segment& b) const$/;"	f	struct:Aligned_Segment
+operator <	type_area.h	/^  bool operator<(const Area_Block& a) const$/;"	f	struct:Area_Block
+operator <	type_area.h	/^  bool operator<(const Area_Location& a) const$/;"	f	struct:Area_Location
+operator <	type_area.h	/^  bool operator<(const Area_Skeleton& a) const$/;"	f	struct:Area_Skeleton
+operator <	type_node.h	/^  bool operator<(const Node& a) const$/;"	f	struct:Node
+operator <	type_node.h	/^  bool operator<(const Node_Skeleton& a) const$/;"	f	struct:Node_Skeleton
+operator <	type_relation.h	/^  bool operator<(const Relation_Delta& a) const$/;"	f	struct:Relation_Delta
+operator <	type_relation.h	/^  bool operator<(const Relation_Skeleton& a) const$/;"	f	struct:Relation_Skeleton
+operator <	type_tags.h	/^  bool operator<(const Tag_Index_Global& a) const$/;"	f	struct:Tag_Index_Global
+operator <	type_tags.h	/^  bool operator<(const Tag_Index_Local& a) const$/;"	f	struct:Tag_Index_Local
+operator <	type_tags.h	/^  bool operator<(const Tag_Object_Global& a) const$/;"	f	struct:Tag_Object_Global
+operator <	type_way.h	/^  bool operator<(const Way_Delta& a) const$/;"	f	struct:Way_Delta
+operator <	type_way.h	/^  bool operator<(const Way_Skeleton& a) const$/;"	f	struct:Way_Skeleton
+operator ==	basic_types.h	/^  bool operator==(const Attic& rhs) const$/;"	f	struct:Attic
+operator ==	basic_types.h	/^  bool operator==(const Quad_Coord& rhs) const$/;"	f	struct:Quad_Coord
+operator ==	basic_types.h	/^  bool operator==(const Uint32_Index& index) const$/;"	f	struct:Uint32_Index
+operator ==	basic_types.h	/^  bool operator==(const Uint64& index) const$/;"	f	struct:Uint64
+operator ==	datatypes.h	/^  bool operator==(const Change_Entry& rhs) const$/;"	f	struct:Change_Entry
+operator ==	datatypes.h	/^  bool operator==(const Derived_Structure& a) const$/;"	f	struct:Derived_Structure
+operator ==	datatypes.h	/^  bool operator==(const OSM_Element_Metadata_Skeleton& a) const$/;"	f	struct:OSM_Element_Metadata_Skeleton
+operator ==	datatypes.h	/^  bool operator==(const String_Object& index) const$/;"	f	struct:String_Object
+operator ==	datatypes.h	/^  bool operator==(const Timestamp& rhs) const$/;"	f	struct:Timestamp
+operator ==	datatypes.h	/^  bool operator==(const User_Data& a) const$/;"	f	struct:User_Data
+operator ==	type_area.h	/^  bool operator==(const Area_Block& a) const$/;"	f	struct:Area_Block
+operator ==	type_area.h	/^  bool operator==(const Area_Location& a) const$/;"	f	struct:Area_Location
+operator ==	type_area.h	/^  bool operator==(const Area_Skeleton& a) const$/;"	f	struct:Area_Skeleton
+operator ==	type_node.h	/^  bool operator==(const Node& a) const$/;"	f	struct:Node
+operator ==	type_node.h	/^  bool operator==(const Node_Skeleton& a) const$/;"	f	struct:Node_Skeleton
+operator ==	type_relation.h	/^  bool operator==(const Relation_Delta& a) const$/;"	f	struct:Relation_Delta
+operator ==	type_relation.h	/^  bool operator==(const Relation_Entry& a) const$/;"	f	struct:Relation_Entry
+operator ==	type_relation.h	/^  bool operator==(const Relation_Skeleton& a) const$/;"	f	struct:Relation_Skeleton
+operator ==	type_tags.h	/^  bool operator==(const Tag_Index_Global& a) const$/;"	f	struct:Tag_Index_Global
+operator ==	type_tags.h	/^  bool operator==(const Tag_Index_Local& a) const$/;"	f	struct:Tag_Index_Local
+operator ==	type_tags.h	/^  bool operator==(const Tag_Object_Global& a) const$/;"	f	struct:Tag_Object_Global
+operator ==	type_way.h	/^  bool operator==(const Way_Delta& a) const$/;"	f	struct:Way_Delta
+operator ==	type_way.h	/^  bool operator==(const Way_Skeleton& a) const$/;"	f	struct:Way_Skeleton
+osm_base_settings	settings.cc	/^const Osm_Base_Settings& osm_base_settings()$/;"	f
+output_handler	parsed_query.h	/^  Output_Handler* output_handler;$/;"	m	class:Parsed_Query
+points	geometry.h	/^  std::vector< Point_Double > points;$/;"	m	class:Linestring_Geometry
+points	geometry.h	/^  std::vector< Point_Double > points;$/;"	m	class:Partial_Way_Geometry
+proportion	type_area.h	/^  static int32 proportion(int32 clow, int32 cmid, int32 cup, int32 low, int32 up)$/;"	f	struct:Area
+pt	geometry.h	/^  Point_Double pt;$/;"	m	class:Point_Geometry
+purge_timeout	settings.h	/^  uint purge_timeout;$/;"	m	struct:Area_Settings
+purge_timeout	settings.h	/^  uint purge_timeout;$/;"	m	struct:Osm_Base_Settings
+raw_log	settings.cc	/^void Logger::raw_log(const std::string& message)$/;"	f	class:Logger
+recursively_calc_ranges	index_computations.h	/^inline void recursively_calc_ranges$/;"	f
+ref	datatypes.h	/^  Id_Type ref;$/;"	m	struct:OSM_Element_Metadata_Skeleton
+ref	type_relation.h	/^  Uint64 ref;$/;"	m	struct:Relation_Entry
+ref32	type_relation.h	/^  Uint32_Index ref32() const { return Uint32_Index(ref.val()); }$/;"	f	struct:Relation_Entry
+relation_pos_is_valid	geometry.cc	/^bool Compound_Geometry::relation_pos_is_valid(unsigned int member_pos) const$/;"	f	class:Compound_Geometry
+relation_pos_is_valid	geometry.cc	/^bool Compound_Geometry::relation_pos_is_valid(unsigned int member_pos, unsigned int nd_pos) const$/;"	f	class:Compound_Geometry
+relation_pos_is_valid	geometry.cc	/^bool Partial_Relation_Geometry::relation_pos_is_valid(unsigned int member_pos) const$/;"	f	class:Partial_Relation_Geometry
+relation_pos_is_valid	geometry.cc	/^bool Partial_Relation_Geometry::relation_pos_is_valid(unsigned int member_pos, unsigned int nd_pos) const$/;"	f	class:Partial_Relation_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos) const { return false; }$/;"	f	class:Bbox_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos) const { return false; }$/;"	f	class:Linestring_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos) const { return false; }$/;"	f	class:Null_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos) const { return false; }$/;"	f	class:Partial_Way_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos) const { return false; }$/;"	f	class:Point_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos, unsigned int nd_pos) const { return false; }$/;"	f	class:Bbox_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos, unsigned int nd_pos) const { return false; }$/;"	f	class:Linestring_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos, unsigned int nd_pos) const { return false; }$/;"	f	class:Null_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos, unsigned int nd_pos) const { return false; }$/;"	f	class:Partial_Way_Geometry
+relation_pos_is_valid	geometry.h	/^  virtual bool relation_pos_is_valid(unsigned int member_pos, unsigned int nd_pos) const { return false; }$/;"	f	class:Point_Geometry
+relation_pos_lat	geometry.cc	/^double Compound_Geometry::relation_pos_lat(unsigned int member_pos) const$/;"	f	class:Compound_Geometry
+relation_pos_lat	geometry.cc	/^double Compound_Geometry::relation_pos_lat(unsigned int member_pos, unsigned int nd_pos) const$/;"	f	class:Compound_Geometry
+relation_pos_lat	geometry.cc	/^double Partial_Relation_Geometry::relation_pos_lat(unsigned int member_pos) const$/;"	f	class:Partial_Relation_Geometry
+relation_pos_lat	geometry.cc	/^double Partial_Relation_Geometry::relation_pos_lat(unsigned int member_pos, unsigned int nd_pos) const$/;"	f	class:Partial_Relation_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos) const { return 0; }$/;"	f	class:Bbox_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos) const { return 0; }$/;"	f	class:Linestring_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos) const { return 0; }$/;"	f	class:Null_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos) const { return 0; }$/;"	f	class:Partial_Way_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos) const { return 0; }$/;"	f	class:Point_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Bbox_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Linestring_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Null_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Partial_Way_Geometry
+relation_pos_lat	geometry.h	/^  virtual double relation_pos_lat(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Point_Geometry
+relation_pos_lon	geometry.cc	/^double Compound_Geometry::relation_pos_lon(unsigned int member_pos) const$/;"	f	class:Compound_Geometry
+relation_pos_lon	geometry.cc	/^double Compound_Geometry::relation_pos_lon(unsigned int member_pos, unsigned int nd_pos) const$/;"	f	class:Compound_Geometry
+relation_pos_lon	geometry.cc	/^double Partial_Relation_Geometry::relation_pos_lon(unsigned int member_pos) const$/;"	f	class:Partial_Relation_Geometry
+relation_pos_lon	geometry.cc	/^double Partial_Relation_Geometry::relation_pos_lon(unsigned int member_pos, unsigned int nd_pos) const$/;"	f	class:Partial_Relation_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos) const { return 0; }$/;"	f	class:Bbox_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos) const { return 0; }$/;"	f	class:Linestring_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos) const { return 0; }$/;"	f	class:Null_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos) const { return 0; }$/;"	f	class:Partial_Way_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos) const { return 0; }$/;"	f	class:Point_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Bbox_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Linestring_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Null_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Partial_Way_Geometry
+relation_pos_lon	geometry.h	/^  virtual double relation_pos_lon(unsigned int member_pos, unsigned int nd_pos) const { return 0; }$/;"	f	class:Point_Geometry
+relation_way_size	geometry.cc	/^unsigned int Compound_Geometry::relation_way_size(unsigned int member_pos) const$/;"	f	class:Compound_Geometry
+relation_way_size	geometry.cc	/^unsigned int Partial_Relation_Geometry::relation_way_size(unsigned int member_pos) const$/;"	f	class:Partial_Relation_Geometry
+relation_way_size	geometry.h	/^  virtual unsigned int relation_way_size(unsigned int member_pos) const { return 0; }$/;"	f	class:Bbox_Geometry
+relation_way_size	geometry.h	/^  virtual unsigned int relation_way_size(unsigned int member_pos) const { return 0; }$/;"	f	class:Linestring_Geometry
+relation_way_size	geometry.h	/^  virtual unsigned int relation_way_size(unsigned int member_pos) const { return 0; }$/;"	f	class:Null_Geometry
+relation_way_size	geometry.h	/^  virtual unsigned int relation_way_size(unsigned int member_pos) const { return 0; }$/;"	f	class:Partial_Way_Geometry
+relation_way_size	geometry.h	/^  virtual unsigned int relation_way_size(unsigned int member_pos) const { return 0; }$/;"	f	class:Point_Geometry
+relations	datatypes.h	/^  std::map< Uint31_Index, std::vector< Relation_Skeleton > > relations;$/;"	m	struct:Set
+role	type_relation.h	/^  uint32 role;$/;"	m	struct:Relation_Entry
+second	datatypes.h	/^  int second() const { return second(timestamp); }$/;"	f	struct:Timestamp
+second	datatypes.h	/^  static int second(uint64 timestamp) { return (timestamp & 0x3f); }$/;"	f	struct:Timestamp
+segment_from_ll_quad	type_area.h	/^  static Aligned_Segment segment_from_ll_quad$/;"	f	struct:Area
+set_global_bbox	parsed_query.h	/^  void set_global_bbox(const Bbox_Double& bbox) { global_bbox_limitation = bbox; }$/;"	f	class:Parsed_Query
+set_input_params	parsed_query.h	/^  void set_input_params(const std::map< std::string, std::string >& input_params_) { input_params = input_params_; }$/;"	f	class:Parsed_Query
+set_output_handler	parsed_query.h	/^inline void Parsed_Query::set_output_handler(Output_Handler_Parser* parser,$/;"	f	class:Parsed_Query
+shared_name	settings.h	/^  std::string shared_name;$/;"	m	struct:Area_Settings
+shared_name	settings.h	/^  std::string shared_name;$/;"	m	struct:Osm_Base_Settings
+shared_name_base	settings.h	/^  std::string shared_name_base;$/;"	m	struct:Basic_Settings
+show_mem_status	settings.cc	/^void show_mem_status()$/;"	f
+size_of	basic_types.h	/^  static uint32 size_of(void* data) { return 8; }$/;"	f	struct:Uint64
+size_of	basic_types.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Attic
+size_of	basic_types.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Uint32_Index
+size_of	basic_types.h	/^  uint32 size_of() const { return 8; }$/;"	f	struct:Uint64
+size_of	basic_types.h	/^  uint32 size_of() const$/;"	f	struct:Attic
+size_of	basic_types.h	/^  uint32 size_of() const$/;"	f	struct:Uint32_Index
+size_of	datatypes.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Change_Entry
+size_of	datatypes.h	/^  static uint32 size_of(void* data)$/;"	f	struct:OSM_Element_Metadata_Skeleton
+size_of	datatypes.h	/^  static uint32 size_of(void* data)$/;"	f	struct:String_Object
+size_of	datatypes.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Timestamp
+size_of	datatypes.h	/^  static uint32 size_of(void* data)$/;"	f	struct:User_Data
+size_of	datatypes.h	/^  uint32 size_of() const$/;"	f	struct:Change_Entry
+size_of	datatypes.h	/^  uint32 size_of() const$/;"	f	struct:OSM_Element_Metadata_Skeleton
+size_of	datatypes.h	/^  uint32 size_of() const$/;"	f	struct:String_Object
+size_of	datatypes.h	/^  uint32 size_of() const$/;"	f	struct:Timestamp
+size_of	datatypes.h	/^  uint32 size_of() const$/;"	f	struct:User_Data
+size_of	type_area.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Area_Block
+size_of	type_area.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Area_Skeleton
+size_of	type_area.h	/^  uint32 size_of() const$/;"	f	struct:Area_Block
+size_of	type_area.h	/^  uint32 size_of() const$/;"	f	struct:Area_Skeleton
+size_of	type_node.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Node_Skeleton
+size_of	type_node.h	/^  uint32 size_of() const$/;"	f	struct:Node_Skeleton
+size_of	type_relation.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Relation_Delta
+size_of	type_relation.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Relation_Skeleton
+size_of	type_relation.h	/^  uint32 size_of() const$/;"	f	struct:Relation_Delta
+size_of	type_relation.h	/^  uint32 size_of() const$/;"	f	struct:Relation_Skeleton
+size_of	type_tags.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Tag_Index_Global
+size_of	type_tags.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Tag_Index_Local
+size_of	type_tags.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Tag_Object_Global
+size_of	type_tags.h	/^  uint32 size_of() const$/;"	f	struct:Tag_Index_Global
+size_of	type_tags.h	/^  uint32 size_of() const$/;"	f	struct:Tag_Index_Local
+size_of	type_tags.h	/^  uint32 size_of() const$/;"	f	struct:Tag_Object_Global
+size_of	type_way.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Way_Delta
+size_of	type_way.h	/^  static uint32 size_of(void* data)$/;"	f	struct:Way_Skeleton
+size_of	type_way.h	/^  uint32 size_of() const$/;"	f	struct:Way_Delta
+size_of	type_way.h	/^  uint32 size_of() const$/;"	f	struct:Way_Skeleton
+source_hash	settings.h	/^  std::string source_hash;$/;"	m	struct:Basic_Settings
+south	geometry.cc	/^double Compound_Geometry::south() const$/;"	f	class:Compound_Geometry
+south	geometry.cc	/^double Linestring_Geometry::south() const$/;"	f	class:Linestring_Geometry
+south	geometry.cc	/^double Partial_Relation_Geometry::south() const$/;"	f	class:Partial_Relation_Geometry
+south	geometry.cc	/^double Partial_Way_Geometry::south() const$/;"	f	class:Partial_Way_Geometry
+south	geometry.h	/^  double south, west, north, east;$/;"	m	struct:Bbox_Double
+south	geometry.h	/^  virtual double south() const { return 0; }$/;"	f	class:Null_Geometry
+south	geometry.h	/^  virtual double south() const { return bbox.south; }$/;"	f	class:Bbox_Geometry
+south	geometry.h	/^  virtual double south() const { return pt.lat; }$/;"	f	class:Point_Geometry
+start_way	geometry.cc	/^void Partial_Relation_Geometry::start_way()$/;"	f	class:Partial_Relation_Geometry
+str	datatypes.h	/^  std::string str() const$/;"	f	struct:Timestamp
+swap	datatypes.h	/^  void swap(Set& rhs)$/;"	f	struct:Set
+tags	datatypes.h	/^  std::vector< std::pair< std::string, std::string > > tags;$/;"	m	struct:Derived_Structure
+tags	type_area.h	/^  std::vector< std::pair< std::string, std::string > > tags;$/;"	m	struct:Area_Location
+tags	type_node.h	/^  std::vector< std::pair< std::string, std::string > > tags;$/;"	m	struct:Node
+tags	type_relation.h	/^  std::vector< std::pair< std::string, std::string > > tags;$/;"	m	struct:Relation
+tags	type_way.h	/^  std::vector< std::pair< std::string, std::string > > tags;$/;"	m	struct:Way
+timestamp	basic_types.h	/^  uint64 timestamp;$/;"	m	struct:Attic
+timestamp	datatypes.h	/^  uint64 timestamp;$/;"	m	struct:OSM_Element_Metadata
+timestamp	datatypes.h	/^  uint64 timestamp;$/;"	m	struct:OSM_Element_Metadata_Skeleton
+timestamp	datatypes.h	/^  uint64 timestamp;$/;"	m	struct:Timestamp
+to_data	basic_types.h	/^  void to_data(void* data) const$/;"	f	struct:Attic
+to_data	basic_types.h	/^  void to_data(void* data) const$/;"	f	struct:Uint32_Index
+to_data	basic_types.h	/^  void to_data(void* data) const$/;"	f	struct:Uint64
+to_data	datatypes.h	/^  void to_data(void* data) const$/;"	f	struct:Change_Entry
+to_data	datatypes.h	/^  void to_data(void* data) const$/;"	f	struct:OSM_Element_Metadata_Skeleton
+to_data	datatypes.h	/^  void to_data(void* data) const$/;"	f	struct:String_Object
+to_data	datatypes.h	/^  void to_data(void* data) const$/;"	f	struct:Timestamp
+to_data	datatypes.h	/^  void to_data(void* data) const$/;"	f	struct:User_Data
+to_data	type_area.h	/^  void to_data(void* data) const$/;"	f	struct:Area_Block
+to_data	type_area.h	/^  void to_data(void* data) const$/;"	f	struct:Area_Skeleton
+to_data	type_node.h	/^  void to_data(void* data) const$/;"	f	struct:Node_Skeleton
+to_data	type_relation.h	/^  void to_data(void* data) const$/;"	f	struct:Relation_Delta
+to_data	type_relation.h	/^  void to_data(void* data) const$/;"	f	struct:Relation_Skeleton
+to_data	type_tags.h	/^  void to_data(void* data) const$/;"	f	struct:Tag_Index_Global
+to_data	type_tags.h	/^  void to_data(void* data) const$/;"	f	struct:Tag_Index_Local
+to_data	type_tags.h	/^  void to_data(void* data) const$/;"	f	struct:Tag_Object_Global
+to_data	type_way.h	/^  void to_data(void* data) const$/;"	f	struct:Way_Delta
+to_data	type_way.h	/^  void to_data(void* data) const$/;"	f	struct:Way_Skeleton
+total_available_space	settings.h	/^  uint64 total_available_space;$/;"	m	struct:Area_Settings
+total_available_space	settings.h	/^  uint64 total_available_space;$/;"	m	struct:Osm_Base_Settings
+total_available_time_units	settings.h	/^  uint64 total_available_time_units;$/;"	m	struct:Area_Settings
+total_available_time_units	settings.h	/^  uint64 total_available_time_units;$/;"	m	struct:Osm_Base_Settings
+trigger_print_bounds	parsed_query.h	/^inline void Parsed_Query::trigger_print_bounds() const$/;"	f	class:Parsed_Query
+type	type_relation.h	/^  uint32 type;$/;"	m	struct:Relation_Entry
+type_name	datatypes.h	/^  std::string type_name;$/;"	m	struct:Derived_Skeleton
+uint	basic_types.h	/^typedef unsigned int uint;$/;"	t
+uint16	basic_types.h	/^typedef unsigned short int uint16;$/;"	t
+uint32	basic_types.h	/^typedef unsigned int uint32;$/;"	t
+uint64	basic_types.h	/^typedef unsigned long long uint64;$/;"	t
+uint8	basic_types.h	/^typedef unsigned char uint8;$/;"	t
+upper_ilat	index_computations.h	/^inline uint32 upper_ilat(uint32 quadtile)$/;"	f
+upper_ilon	index_computations.h	/^inline uint32 upper_ilon(uint32 quadtile)$/;"	f
+used_indices	type_area.h	/^  std::vector< uint32 > used_indices;$/;"	m	struct:Area_Location
+used_indices	type_area.h	/^  std::vector< uint32 > used_indices;$/;"	m	struct:Area_Skeleton
+user_id	datatypes.h	/^  uint32 user_id;$/;"	m	struct:OSM_Element_Metadata
+user_id	datatypes.h	/^  uint32 user_id;$/;"	m	struct:OSM_Element_Metadata_Skeleton
+user_name	datatypes.h	/^  std::string user_name;$/;"	m	struct:OSM_Element_Metadata
+val	basic_types.h	/^  uint32 val() const$/;"	f	struct:Uint32_Index
+val	basic_types.h	/^  uint64 val() const { return value; }$/;"	f	struct:Uint64
+val	datatypes.h	/^  std::string val() const$/;"	f	struct:String_Object
+valid	geometry.h	/^  bool valid() const$/;"	f	struct:Bbox_Double
+value	basic_types.h	/^    uint32 value;$/;"	m	struct:Uint32_Index
+value	basic_types.h	/^    uint64 value;$/;"	m	struct:Uint64
+value	datatypes.h	/^    std::string value;$/;"	m	struct:String_Object
+value	type_tags.h	/^  std::string value;$/;"	m	struct:Tag_Entry
+value	type_tags.h	/^  std::string value;$/;"	m	struct:Tag_Index_Global
+value	type_tags.h	/^  std::string value;$/;"	m	struct:Tag_Index_Local
+version	datatypes.h	/^  uint32 version;$/;"	m	struct:OSM_Element_Metadata
+version	datatypes.h	/^  uint32 version;$/;"	m	struct:OSM_Element_Metadata_Skeleton
+version	settings.h	/^  std::string version;$/;"	m	struct:Basic_Settings
+void_tag_value	type_tags.h	/^inline const std::string& void_tag_value()$/;"	f
+way_idxs	type_relation.h	/^  std::vector< Uint31_Index > way_idxs;$/;"	m	struct:Relation
+way_idxs	type_relation.h	/^  std::vector< Uint31_Index > way_idxs;$/;"	m	struct:Relation_Skeleton
+way_idxs_added	type_relation.h	/^  std::vector< std::pair< uint, Uint31_Index > > way_idxs_added;$/;"	m	struct:Relation_Delta
+way_idxs_removed	type_relation.h	/^  std::vector< uint > way_idxs_removed;$/;"	m	struct:Relation_Delta
+way_pos_is_valid	geometry.h	/^  virtual bool way_pos_is_valid(unsigned int pos) const { return false; }$/;"	f	class:Bbox_Geometry
+way_pos_is_valid	geometry.h	/^  virtual bool way_pos_is_valid(unsigned int pos) const { return false; }$/;"	f	class:Compound_Geometry
+way_pos_is_valid	geometry.h	/^  virtual bool way_pos_is_valid(unsigned int pos) const { return false; }$/;"	f	class:Null_Geometry
+way_pos_is_valid	geometry.h	/^  virtual bool way_pos_is_valid(unsigned int pos) const { return false; }$/;"	f	class:Partial_Relation_Geometry
+way_pos_is_valid	geometry.h	/^  virtual bool way_pos_is_valid(unsigned int pos) const { return false; }$/;"	f	class:Point_Geometry
+way_pos_is_valid	geometry.h	/^  virtual bool way_pos_is_valid(unsigned int pos) const { return pos < points.size() && points[pos].lat < 100.; }$/;"	f	class:Partial_Way_Geometry
+way_pos_is_valid	geometry.h	/^  virtual bool way_pos_is_valid(unsigned int pos) const { return pos < points.size(); }$/;"	f	class:Linestring_Geometry
+way_pos_lat	geometry.h	/^  virtual double way_pos_lat(unsigned int pos) const { return 0; }$/;"	f	class:Bbox_Geometry
+way_pos_lat	geometry.h	/^  virtual double way_pos_lat(unsigned int pos) const { return 0; }$/;"	f	class:Compound_Geometry
+way_pos_lat	geometry.h	/^  virtual double way_pos_lat(unsigned int pos) const { return 0; }$/;"	f	class:Null_Geometry
+way_pos_lat	geometry.h	/^  virtual double way_pos_lat(unsigned int pos) const { return 0; }$/;"	f	class:Partial_Relation_Geometry
+way_pos_lat	geometry.h	/^  virtual double way_pos_lat(unsigned int pos) const { return 0; }$/;"	f	class:Point_Geometry
+way_pos_lat	geometry.h	/^  virtual double way_pos_lat(unsigned int pos) const { return points[pos].lat; }$/;"	f	class:Linestring_Geometry
+way_pos_lat	geometry.h	/^  virtual double way_pos_lat(unsigned int pos) const { return points[pos].lat; }$/;"	f	class:Partial_Way_Geometry
+way_pos_lon	geometry.h	/^  virtual double way_pos_lon(unsigned int pos) const { return 0; }$/;"	f	class:Bbox_Geometry
+way_pos_lon	geometry.h	/^  virtual double way_pos_lon(unsigned int pos) const { return 0; }$/;"	f	class:Compound_Geometry
+way_pos_lon	geometry.h	/^  virtual double way_pos_lon(unsigned int pos) const { return 0; }$/;"	f	class:Null_Geometry
+way_pos_lon	geometry.h	/^  virtual double way_pos_lon(unsigned int pos) const { return 0; }$/;"	f	class:Partial_Relation_Geometry
+way_pos_lon	geometry.h	/^  virtual double way_pos_lon(unsigned int pos) const { return 0; }$/;"	f	class:Point_Geometry
+way_pos_lon	geometry.h	/^  virtual double way_pos_lon(unsigned int pos) const { return points[pos].lon; }$/;"	f	class:Linestring_Geometry
+way_pos_lon	geometry.h	/^  virtual double way_pos_lon(unsigned int pos) const { return points[pos].lon; }$/;"	f	class:Partial_Way_Geometry
+way_size	geometry.h	/^  virtual unsigned int way_size() const { return 0; }$/;"	f	class:Bbox_Geometry
+way_size	geometry.h	/^  virtual unsigned int way_size() const { return 0; }$/;"	f	class:Compound_Geometry
+way_size	geometry.h	/^  virtual unsigned int way_size() const { return 0; }$/;"	f	class:Null_Geometry
+way_size	geometry.h	/^  virtual unsigned int way_size() const { return 0; }$/;"	f	class:Partial_Relation_Geometry
+way_size	geometry.h	/^  virtual unsigned int way_size() const { return 0; }$/;"	f	class:Point_Geometry
+way_size	geometry.h	/^  virtual unsigned int way_size() const { return points.size(); }$/;"	f	class:Linestring_Geometry
+way_size	geometry.h	/^  virtual unsigned int way_size() const { return points.size(); }$/;"	f	class:Partial_Way_Geometry
+ways	datatypes.h	/^  std::map< Uint31_Index, std::vector< Way_Skeleton > > ways;$/;"	m	struct:Set
+west	geometry.cc	/^double Compound_Geometry::west() const$/;"	f	class:Compound_Geometry
+west	geometry.cc	/^double Linestring_Geometry::west() const$/;"	f	class:Linestring_Geometry
+west	geometry.cc	/^double Partial_Relation_Geometry::west() const$/;"	f	class:Partial_Relation_Geometry
+west	geometry.cc	/^double Partial_Way_Geometry::west() const$/;"	f	class:Partial_Way_Geometry
+west	geometry.h	/^  double south, west, north, east;$/;"	m	struct:Bbox_Double
+west	geometry.h	/^  virtual double west() const { return 0; }$/;"	f	class:Null_Geometry
+west	geometry.h	/^  virtual double west() const { return bbox.west; }$/;"	f	class:Bbox_Geometry
+west	geometry.h	/^  virtual double west() const { return pt.lon; }$/;"	f	class:Point_Geometry
+year	datatypes.h	/^  int year() const { return year(timestamp); }$/;"	f	struct:Timestamp
+year	datatypes.h	/^  static int year(uint64 timestamp) { return ((timestamp>>26) & 0x3fff); }$/;"	f	struct:Timestamp
+~Area_Usage_Listener	datatypes.h	/^    virtual ~Area_Usage_Listener() {}$/;"	f	class:Area_Usage_Listener
+~Compound_Geometry	geometry.h	/^  virtual ~Compound_Geometry()$/;"	f	class:Compound_Geometry
+~Linestring_Geometry	geometry.h	/^  virtual ~Linestring_Geometry() { delete bounds; }$/;"	f	class:Linestring_Geometry
+~Opaque_Geometry	geometry.h	/^  virtual ~Opaque_Geometry() {}$/;"	f	class:Opaque_Geometry
+~Parsed_Query	parsed_query.h	/^  ~Parsed_Query() { delete output_handler; }$/;"	f	class:Parsed_Query
+~Partial_Relation_Geometry	geometry.h	/^  virtual ~Partial_Relation_Geometry()$/;"	f	class:Partial_Relation_Geometry
+~Partial_Way_Geometry	geometry.h	/^  virtual ~Partial_Way_Geometry() { delete bounds; }$/;"	f	class:Partial_Way_Geometry
