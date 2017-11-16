@@ -281,6 +281,8 @@ struct Way_Delta
       {
         std::ostringstream out;
         out<<"Bad geometry for way " << id.val();
+        std::cout << "removed nodes: " << nds_removed.size() << ", added nodes: " << nds_added.size() << std::endl;
+        std::cout << "number of resulted nodes: " << result.nds.size() << ", number of res geometry: " << result.geometry.size() << std::endl;
         throw std::logic_error(out.str());
       }
     }
