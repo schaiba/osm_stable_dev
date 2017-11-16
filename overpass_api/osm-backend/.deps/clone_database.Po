@@ -141,10 +141,10 @@ overpass_api/osm-backend/clone_database.o: \
  overpass_api/osm-backend/../core/basic_types.h \
  overpass_api/osm-backend/../core/type_node.h \
  overpass_api/osm-backend/../core/index_computations.h \
- overpass_api/osm-backend/../core/type_way.h \
+ overpass_api/osm-backend/../core/type_way.h /usr/include/c++/5/iostream \
  overpass_api/osm-backend/../core/type_relation.h \
  overpass_api/osm-backend/../core/type_tags.h \
- overpass_api/osm-backend/../core/type_area.h /usr/include/c++/5/iostream \
+ overpass_api/osm-backend/../core/type_area.h \
  overpass_api/osm-backend/../../template_db/block_backend.h \
  overpass_api/osm-backend/../../template_db/file_blocks.h \
  overpass_api/osm-backend/../../template_db/file_blocks_index.h \
@@ -533,13 +533,13 @@ overpass_api/osm-backend/../core/index_computations.h:
 
 overpass_api/osm-backend/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/osm-backend/../core/type_relation.h:
 
 overpass_api/osm-backend/../core/type_tags.h:
 
 overpass_api/osm-backend/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/osm-backend/../../template_db/block_backend.h:
 

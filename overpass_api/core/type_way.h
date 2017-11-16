@@ -30,6 +30,7 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
+#include <iostream>
 
 
 struct Way
@@ -279,12 +280,15 @@ struct Way_Delta
       if (!result.geometry.empty() && (result.nds.size() != result.geometry.size()))
       {
         std::ostringstream out;
-        out<<"Bad geometry for way "<<id.val();
+        out<<"Bad geometry for way " << id.val();
         throw std::logic_error(out.str());
       }
     }
     else
+    {
+      std::cout << "result.id = 0" << std::endl;
       result.id = 0u;
+    }
     
     return result;
   }

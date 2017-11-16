@@ -144,10 +144,11 @@ overpass_api/statements/pivot.o: overpass_api/statements/pivot.cc \
  overpass_api/statements/../data/../core/type_node.h \
  overpass_api/statements/../data/../core/index_computations.h \
  overpass_api/statements/../data/../core/type_way.h \
+ /usr/include/c++/5/iostream \
  overpass_api/statements/../data/../core/type_relation.h \
  overpass_api/statements/../data/../core/type_tags.h \
  overpass_api/statements/../data/../core/type_area.h \
- /usr/include/c++/5/iostream overpass_api/statements/statement.h \
+ overpass_api/statements/statement.h \
  overpass_api/statements/../core/datatypes.h \
  overpass_api/statements/../core/parsed_query.h \
  overpass_api/statements/../core/../frontend/output_handler.h \
@@ -580,13 +581,13 @@ overpass_api/statements/../data/../core/index_computations.h:
 
 overpass_api/statements/../data/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/statements/../data/../core/type_relation.h:
 
 overpass_api/statements/../data/../core/type_tags.h:
 
 overpass_api/statements/../data/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/statements/statement.h:
 

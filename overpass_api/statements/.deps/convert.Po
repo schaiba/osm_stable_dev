@@ -125,10 +125,10 @@ overpass_api/statements/convert.o: overpass_api/statements/convert.cc \
  /usr/include/c++/5/bits/algorithmfwd.h \
  /usr/include/c++/5/bits/stl_heap.h /usr/include/c++/5/bits/stl_tempbuf.h \
  overpass_api/statements/../data/../core/type_way.h \
+ /usr/include/c++/5/iostream \
  overpass_api/statements/../data/../core/type_relation.h \
  overpass_api/statements/../data/../core/type_tags.h \
  overpass_api/statements/../data/../core/type_area.h \
- /usr/include/c++/5/iostream \
  overpass_api/statements/../data/../../template_db/block_backend.h \
  overpass_api/statements/../data/../../template_db/file_blocks.h \
  overpass_api/statements/../data/../../template_db/file_blocks_index.h \
@@ -529,13 +529,13 @@ overpass_api/statements/../data/../core/index_computations.h:
 
 overpass_api/statements/../data/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/statements/../data/../core/type_relation.h:
 
 overpass_api/statements/../data/../core/type_tags.h:
 
 overpass_api/statements/../data/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/statements/../data/../../template_db/block_backend.h:
 

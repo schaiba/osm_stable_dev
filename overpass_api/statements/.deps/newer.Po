@@ -151,10 +151,10 @@ overpass_api/statements/newer.o: overpass_api/statements/newer.cc \
  overpass_api/statements/../data/../core/type_node.h \
  overpass_api/statements/../data/../core/index_computations.h \
  overpass_api/statements/../data/../core/type_way.h \
+ /usr/include/c++/5/iostream \
  overpass_api/statements/../data/../core/type_relation.h \
  overpass_api/statements/../data/../core/type_tags.h \
  overpass_api/statements/../data/../core/type_area.h \
- /usr/include/c++/5/iostream \
  overpass_api/statements/../data/../core/settings.h \
  overpass_api/statements/../data/filenames.h \
  overpass_api/statements/newer.h overpass_api/statements/../data/utils.h \
@@ -605,13 +605,13 @@ overpass_api/statements/../data/../core/index_computations.h:
 
 overpass_api/statements/../data/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/statements/../data/../core/type_relation.h:
 
 overpass_api/statements/../data/../core/type_tags.h:
 
 overpass_api/statements/../data/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/statements/../data/../core/settings.h:
 

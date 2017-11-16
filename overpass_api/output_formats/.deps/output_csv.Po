@@ -111,10 +111,10 @@ overpass_api/output_formats/output_csv.o: \
  /usr/include/c++/5/bits/algorithmfwd.h \
  /usr/include/c++/5/bits/stl_heap.h /usr/include/c++/5/bits/stl_tempbuf.h \
  overpass_api/output_formats/../core/type_way.h \
+ /usr/include/c++/5/iostream \
  overpass_api/output_formats/../core/type_relation.h \
  overpass_api/output_formats/../core/type_tags.h \
  overpass_api/output_formats/../core/type_area.h \
- /usr/include/c++/5/iostream \
  overpass_api/output_formats/../core/geometry.h \
  overpass_api/output_formats/../frontend/output_handler.h \
  overpass_api/output_formats/../frontend/../core/datatypes.h \
@@ -410,13 +410,13 @@ overpass_api/output_formats/../core/index_computations.h:
 
 overpass_api/output_formats/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/output_formats/../core/type_relation.h:
 
 overpass_api/output_formats/../core/type_tags.h:
 
 overpass_api/output_formats/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/output_formats/../core/geometry.h:
 

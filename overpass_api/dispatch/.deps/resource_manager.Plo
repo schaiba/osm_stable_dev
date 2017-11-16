@@ -138,10 +138,10 @@ overpass_api/dispatch/resource_manager.lo: \
  overpass_api/dispatch/../core/basic_types.h \
  overpass_api/dispatch/../core/type_node.h \
  overpass_api/dispatch/../core/index_computations.h \
- overpass_api/dispatch/../core/type_way.h \
+ overpass_api/dispatch/../core/type_way.h /usr/include/c++/5/iostream \
  overpass_api/dispatch/../core/type_relation.h \
  overpass_api/dispatch/../core/type_tags.h \
- overpass_api/dispatch/../core/type_area.h /usr/include/c++/5/iostream \
+ overpass_api/dispatch/../core/type_area.h \
  overpass_api/dispatch/../core/parsed_query.h \
  overpass_api/dispatch/../core/../frontend/output_handler.h \
  overpass_api/dispatch/../core/../frontend/../core/datatypes.h \
@@ -563,13 +563,13 @@ overpass_api/dispatch/../core/index_computations.h:
 
 overpass_api/dispatch/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/dispatch/../core/type_relation.h:
 
 overpass_api/dispatch/../core/type_tags.h:
 
 overpass_api/dispatch/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/dispatch/../core/parsed_query.h:
 

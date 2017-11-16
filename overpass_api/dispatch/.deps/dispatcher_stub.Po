@@ -108,10 +108,10 @@ overpass_api/dispatch/dispatcher_stub.o: \
  /usr/include/c++/5/bits/algorithmfwd.h \
  /usr/include/c++/5/bits/stl_heap.h /usr/include/c++/5/bits/stl_tempbuf.h \
  overpass_api/dispatch/../statements/../core/type_way.h \
+ /usr/include/c++/5/iostream \
  overpass_api/dispatch/../statements/../core/type_relation.h \
  overpass_api/dispatch/../statements/../core/type_tags.h \
  overpass_api/dispatch/../statements/../core/type_area.h \
- /usr/include/c++/5/iostream \
  overpass_api/dispatch/../statements/../core/parsed_query.h \
  overpass_api/dispatch/../statements/../core/../frontend/output_handler.h \
  overpass_api/dispatch/../statements/../core/../frontend/../core/datatypes.h \
@@ -493,13 +493,13 @@ overpass_api/dispatch/../statements/../core/index_computations.h:
 
 overpass_api/dispatch/../statements/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/dispatch/../statements/../core/type_relation.h:
 
 overpass_api/dispatch/../statements/../core/type_tags.h:
 
 overpass_api/dispatch/../statements/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/dispatch/../statements/../core/parsed_query.h:
 

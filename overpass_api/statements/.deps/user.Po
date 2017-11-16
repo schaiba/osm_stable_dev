@@ -147,10 +147,10 @@ overpass_api/statements/user.o: overpass_api/statements/user.cc \
  overpass_api/statements/../data/../core/type_node.h \
  overpass_api/statements/../data/../core/index_computations.h \
  overpass_api/statements/../data/../core/type_way.h \
+ /usr/include/c++/5/iostream \
  overpass_api/statements/../data/../core/type_relation.h \
  overpass_api/statements/../data/../core/type_tags.h \
  overpass_api/statements/../data/../core/type_area.h \
- /usr/include/c++/5/iostream \
  overpass_api/statements/../data/../core/geometry.h \
  overpass_api/statements/../data/collect_members.h \
  overpass_api/statements/../data/../statements/statement.h \
@@ -607,13 +607,13 @@ overpass_api/statements/../data/../core/index_computations.h:
 
 overpass_api/statements/../data/../core/type_way.h:
 
+/usr/include/c++/5/iostream:
+
 overpass_api/statements/../data/../core/type_relation.h:
 
 overpass_api/statements/../data/../core/type_tags.h:
 
 overpass_api/statements/../data/../core/type_area.h:
-
-/usr/include/c++/5/iostream:
 
 overpass_api/statements/../data/../core/geometry.h:
 
