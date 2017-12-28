@@ -442,8 +442,15 @@ void compute_geometry
             = new_node_idx_by_id.find(Node_Skeleton::Id_Type(nit->ref.val()));
         if (it2 != new_node_idx_by_id.end())
           member_idxs.push_back(it2->second.ll_upper);
-        else
-          std::cerr<<"compute_geometry: Node "<<nit->ref.val()<<" used in relation "<<it->elem.id.val()<<" not found.\n";
+        else 
+        {
+          //std::cerr<<"compute_geometry: Node "<<nit->ref.val()<<" used in relation "<<it->elem.id.val()<<" not found.\n";
+            std::string noderelnf = std::string("compute_geometry(): Node ") + std::to_string(nit->ref.val()) + " used in relation " + std::to_string(it->elem.id.val()) + " not found.\n";
+            std::string filepath = osm_base_settings().RELATIONS->get_file_name_trunk() + osm_base_settings().RELATIONS->get_data_suffix() + osm_base_settings().RELATIONS->get_index_suffix();
+            std::cout << "The full file path is " << filepath << std::endl;
+            Logger* logger; 
+            logger->annotated_log(noderelnf);
+        }
       }
       else if (nit->type == Relation_Entry::WAY)
       {
@@ -452,7 +459,14 @@ void compute_geometry
         if (it2 != new_way_idx_by_id.end())
           member_idxs.push_back(it2->second.val());
         else
-          std::cerr<<"compute_geometry: Way "<<nit->ref.val()<<" used in relation "<<it->elem.id.val()<<" not found.\n";
+        {
+          //std::cerr<<"compute_geometry: Way "<<nit->ref.val()<<" used in relation "<<it->elem.id.val()<<" not found.\n";
+          std::string noderelnf = std::string("compute_geometry(): Way ") + std::to_string(nit->ref.val()) + " used in relation " + std::to_string(it->elem.id.val()) + " not found.\n";
+          std::string filepath = osm_base_settings().RELATIONS->get_file_name_trunk() + osm_base_settings().RELATIONS->get_data_suffix() + osm_base_settings().RELATIONS->get_index_suffix();
+          std::cout << "The full file path is " << filepath << std::endl;
+          Logger* logger; 
+          logger->annotated_log(noderelnf);
+        }
       }
     }
 
@@ -517,8 +531,15 @@ void compute_idx_and_geometry
           // Otherwise the node has expired before our relation - something has gone wrong seriously.
         }
         else
-          std::cerr<<"compute_idx_and_geometry: Node "<<mit->ref.val()<<" used in relation "<<skeleton.id.val()<<" not found.\n";
+        {
+        //  std::cerr<<"compute_idx_and_geometry: Node "<<mit->ref.val()<<" used in relation "<<skeleton.id.val()<<" not found.\n";
         // Otherwise the node is not contained in our list - something has gone wrong seriously.
+            std::string noderelnf = std::string("compute_idx_and_geometry(): Node ") + std::to_string(mit->ref.val()) + " used in relation " + std::to_string(skeleton.id.val()) + " not found.\n";
+            std::string filepath = osm_base_settings().RELATIONS->get_file_name_trunk() + osm_base_settings().RELATIONS->get_data_suffix() + osm_base_settings().RELATIONS->get_index_suffix();
+            std::cout << "The full file path is " << filepath << std::endl;
+            Logger* logger; 
+            logger->annotated_log(noderelnf);
+        }
       }
       else if (mit->type == Relation_Entry::WAY)
       {
@@ -536,8 +557,15 @@ void compute_idx_and_geometry
           // Otherwise the way has expired before our relation - something has gone wrong seriously.
         }
         else
-          std::cerr<<"compute_idx_and_geometry: Way "<<mit->ref.val()<<" used in relation "<<skeleton.id.val()<<" not found.\n";
+        {
+        //  std::cerr<<"compute_idx_and_geometry: Way "<<mit->ref.val()<<" used in relation "<<skeleton.id.val()<<" not found.\n";
         // Otherwise the way is not contained in our list - something has gone wrong seriously.
+            std::string noderelnf = std::string("compute_idx_and_geometry(): Way ") + std::to_string(mit->ref.val()) + " used in relation " + std::to_string(skeleton.id.val()) + " not found.\n";
+            std::string filepath = osm_base_settings().RELATIONS->get_file_name_trunk() + osm_base_settings().RELATIONS->get_data_suffix() + osm_base_settings().RELATIONS->get_index_suffix();
+            std::cout << "The full file path is " << filepath << std::endl;
+            Logger* logger; 
+            logger->annotated_log(noderelnf);
+        }
       }
   }
 
@@ -799,8 +827,13 @@ void adapt_newest_existing_attic
   {
     attic_skeletons_to_delete[old_idx].insert(existing_delta);
     full_attic[new_idx].insert(Attic< Relation_Delta >(new_delta, existing_delta.timestamp));
-    std::cerr<<"Relation "<<existing_delta.id.val()<<" has changed at timestamp "
-        <<Timestamp(existing_delta.timestamp).str()<<" in two different diffs.\n";
+    //std::cerr<<"Relation "<<existing_delta.id.val()<<" has changed at timestamp "
+    //    <<Timestamp(existing_delta.timestamp).str()<<" in two different diffs.\n";
+    std::string tmstp_rel_error = std::string("Relation ") + std::to_string(existing_delta.id.val()) + " has changed at timestamp " + Timestamp(existing_delta.timestamp).str() + " in two different diffs.\n";
+    std::string filepath = osm_base_settings().RELATIONS->get_file_name_trunk() + osm_base_settings().RELATIONS->get_data_suffix() + osm_base_settings().RELATIONS->get_index_suffix();
+    std::cout << "The full file path is " << filepath << std::endl;
+    Logger* logger; 
+    logger->annotated_log(tmstp_rel_error);
   }
 }
 

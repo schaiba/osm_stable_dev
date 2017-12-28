@@ -20,6 +20,7 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <string>
 
 #include <sys/stat.h>
 #include <cstdio>
@@ -84,8 +85,15 @@ void compute_idx_and_geometry
       // Otherwise the node has expired before our way - something has gone wrong seriously.
     }
     else
-      std::cerr<<"compute_idx_and_geometry: Node "<<it->val()<<" used in way "<<skeleton.id.val()<<" not found.\n";
+    {
+    // std::cerr<<"compute_idx_and_geometry: Node "<<it->val()<<" used in way "<<skeleton.id.val()<<" not found.\n";
     // Otherwise the node is not contained in our list - something has gone wrong seriously.
+        std::string noderelnf = std::string("compute_idx_and_geometry(): Node ") + std::to_string(it->val()) + " used in way " + std::to_string(skeleton.id.val()) + " not found.\n";
+        std::string filepath = osm_base_settings().WAYS->get_file_name_trunk() + osm_base_settings().WAYS->get_data_suffix() + osm_base_settings().WAYS->get_index_suffix();
+        std::cout << "The full file path is " << filepath << std::endl;
+        Logger* logger; 
+        logger->annotated_log(noderelnf);
+    }
   }
 
   std::vector< uint32 > nd_idxs;
@@ -288,8 +296,13 @@ void adapt_newest_existing_attic
   {
     attic_skeletons_to_delete[old_idx].insert(existing_delta);
     full_attic[new_idx].insert(Attic< Way_Delta >(new_delta, existing_delta.timestamp));
-    std::cerr<<"Way "<<existing_delta.id.val()<<" has changed at timestamp "
-        <<Timestamp(existing_delta.timestamp).str()<<" in two different diffs.\n";
+    //std::cerr<<"Way "<<existing_delta.id.val()<<" has changed at timestamp "
+    //    <<Timestamp(existing_delta.timestamp).str()<<" in two different diffs.\n";
+    std::string tmstp_way_error = std::string("Way ") + std::to_string(existing_delta.id.val()) + " has changed at timestamp " + Timestamp(existing_delta.timestamp).str() + " in two different diffs.\n";
+    std::string filepath = osm_base_settings().WAYS->get_file_name_trunk() + osm_base_settings().WAYS->get_data_suffix() + osm_base_settings().WAYS->get_index_suffix();
+    std::cout << "The full file path is " << filepath << std::endl;
+    Logger* logger; 
+    logger->annotated_log(tmstp_way_error);
   }
 }
 
@@ -605,7 +618,14 @@ void compute_geometry
       if (it2 != new_node_idx_by_id.end())
         nd_idxs.push_back(it2->second.ll_upper);
       else
-        std::cerr<<"compute_geometry: Node "<<nit->val()<<" used in way "<<it->elem.id.val()<<" not found.\n";
+      {
+      //  std::cerr<<"compute_geometry: Node "<<nit->val()<<" used in way "<<it->elem.id.val()<<" not found.\n";
+          std::string noderelnf = std::string("compute_geometry(): Node ") + std::to_string(nit->val()) + " used in way " + std::to_string(it->elem.id.val()) + " not found.\n";
+          std::string filepath = osm_base_settings().WAYS->get_file_name_trunk() + osm_base_settings().WAYS->get_data_suffix() + osm_base_settings().WAYS->get_index_suffix();
+          std::cout << "The full file path is " << filepath << std::endl;
+          Logger* logger; 
+          logger->annotated_log(noderelnf);
+      }
     }
 
     Uint31_Index index = Way::calc_index(nd_idxs);
@@ -662,7 +682,14 @@ void new_implicit_skeletons
         if (it3 != new_node_idx_by_id.end())
           nd_idxs.push_back(it3->second.ll_upper);
         else
-          std::cerr<<"new_implicit_skeletons: Node "<<nit->val()<<" used in way "<<it2->id.val()<<" not found.\n";
+        {
+        //  std::cerr<<"new_implicit_skeletons: Node "<<nit->val()<<" used in way "<<it2->id.val()<<" not found.\n";
+            std::string noderelnf = std::string("new_implicit_skeletons(): Node ") + std::to_string(nit->val()) + " used in way " + std::to_string(it2->id.val()) + " not found.\n";
+            std::string filepath = osm_base_settings().WAYS->get_file_name_trunk() + osm_base_settings().WAYS->get_data_suffix() + osm_base_settings().WAYS->get_index_suffix();
+            std::cout << "The full file path is " << filepath << std::endl;
+            Logger* logger; 
+            logger->annotated_log(noderelnf);
+        }
       }
 
       Uint31_Index index = Way::calc_index(nd_idxs);
